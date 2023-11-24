@@ -1,0 +1,72 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <div class="modal__close" data-modal-close>
+      <img
+        src="./images/icons/close.svg"
+        alt="modal close button"
+        width="30"
+        height="30"
+        class="modal__close--icon"
+      />
+    </div>
+
+    <div class="modal__content">
+      <form class="modal__form" name="contacts-form" id="modal__form">
+        <strong class="modal__form--title">Contact Us</strong>
+        <div
+          class="modal__form--details"
+          role="group"
+          aria-labelledby="modal__form"
+        >
+          <div class="modal__form--field">
+            <label for="name" class="modal__form--label"> Name </label>
+            <input
+              class="modal__form--input"
+              type="text"
+              name="name"
+              id="name"
+              autocomplete="name"
+              placeholder="Enter your name"
+            />
+            <svg width="18" height="18" class="form__input--icon">
+              <use href="./images/sprite.svg#person-black"></use>
+            </svg>
+          </div>
+
+          <div class="modal__form--field">
+            <label for="email" class="modal__form--label"> Email </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="email"
+              class="modal__form--input"
+              placeholder="Enter your email"
+            />
+            <svg class="form__input--icon" width="18" height="18">
+              <use href="./images/sprite.svg#email-black"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__form--checkbox">
+          <label class="form__label--agree">
+            <input
+              class="form__input--agree"
+              type="checkbox"
+              name="agree"
+              value="agree"
+            />
+
+            <svg class="label__agree--icon" width="16" height="15">
+              <use href="./images/sprite.svg#icon-check"></use>
+            </svg>
+
+            <span>I agree to receive the newsletter and subscribe</span>
+          </label>
+        </div>
+
+        <button type="submit" class="modal__form--btn btn">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</div>

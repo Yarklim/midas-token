@@ -1,0 +1,73 @@
+:root {
+  // --------- Fonts ---------
+  --font-inter: 'Inter', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+
+  // ---------- Text ----------
+  --text-light: #fff;
+  --text-dark: #0a0c0f;
+  --text-24: rgba(255, 255, 255, 0.24);
+  --text-36: rgba(255, 255, 255, 0.36);
+  --text-56: rgba(255, 255, 255, 0.56);
+  --text-8: rgba(255, 255, 255, 0.08);
+
+  // ---------- Colors ----------
+  --accent-primary: #43a1f7;
+  --rose-1: #ff68c3;
+  --rose-2: #ea68ff;
+  --rose-3: #cf68ff;
+  --light-color: #fff;
+  --dark-color: #000;
+
+  // ---------- Backgrounds ----------
+  --background-primary: #0a0c0f;
+  --background-blue: rgba(67, 161, 247, 0.16);
+  --background-4: rgba(255, 255, 255, 0.04);
+  --background-8: rgba(255, 255, 255, 0.08);
+  --background-12: rgba(255, 255, 255, 0.12);
+  --background-rose: rgba(255, 104, 195, 0.16);
+
+  // ---------- Gradients ------------
+  --linear-grad-blue: linear-gradient(268deg, #577cff 0%, #4cbfff 100%);
+  --linear-grad-rose: linear-gradient(268deg, #fb4a4a 0%, #9b4cff 100%);
+  --linear-grad-yellow: linear-gradient(44deg, #ffc657 24.69%, #ffd977 75.86%);
+  --linear-grad-green: linear-gradient(180deg, #43d7f7 0%, #00f69e 100%);
+  --linear-grad-rose-blue: linear-gradient(
+    90deg,
+    #ba62ff 18.51%,
+    #57b1f2 80.43%
+  );
+
+  --radial-grad-rose: radial-gradient(
+    38.86% 38.86% at 50% 50%,
+    rgba(255, 108, 223, 0.24) 0%,
+    rgba(255, 108, 188, 0) 100%
+  );
+  --radial-grad-violet: radial-gradient(
+    38.86% 38.86% at 50% 50%,
+    #b153fb 0%,
+    #6944ff 100%
+  );
+  --radial-grad-blue: radial-gradient(
+    38.86% 38.86% at 50% 50%,
+    #6743f7 0%,
+    #02e4d6 100%
+  );
+  --radial-grad-green: radial-gradient(
+    circle at center,
+    #43a1f7 0%,
+    #00f69e 100%
+  );
+  --radial-grad-orange: radial-gradient(
+    38.86% 38.86% at 50% 50%,
+    rgba(255, 168, 119, 0.16) 0%,
+    rgba(255, 217, 119, 0) 100%
+  );
+
+  // ------------ Media screen ------------
+  --mobile: 320px;
+  --tablet-small: 480px;
+  --tablet-big: 768px;
+  --desktop-small: 1024px;
+  --desktop-big: 1200px;
+}

@@ -1,0 +1,56 @@
+button {
+  color: var(--light-color);
+  background-color: var(--accent);
+
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--hover-accent);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:focus-visible {
+    outline: 2px solid black;
+  }
+
+  &:hover .circle__button-arrow,
+  &:focus-visible .circle__button-arrow {
+    animation: squish 0.3s ease-in-out;
+  }
+}
+
+.circle__button {
+  width: clamp(32px, 5vw, 64px);
+  height: clamp(32px, 5vw, 64px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+}
+
+.circle__button-arrow {
+  height: clamp(18px, 3vw, 32px);
+
+  rotate: -90deg;
+
+  fill: #fff;
+}
+@keyframes squish {
+  50% {
+    scale: 1.5 0.5;
+  }
+}
+
+[class*='__button-text'] {
+  font-size: clamp(0.875rem, 0.804rem + 0.36vw, 1.125rem);
+  font-weight: 500;
+
+  color: var(--title-color);
+}

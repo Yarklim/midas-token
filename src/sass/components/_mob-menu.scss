@@ -1,0 +1,54 @@
+.mob-menu__nav {
+  position: fixed;
+  right: -100%;
+  top: clamp(4.5rem, 4.083rem + 2.09vw, 5.375rem);
+
+  z-index: 10;
+
+  width: clamp(19.375rem, 16.692rem + 13.41vw, 25rem);
+
+  padding: 50px;
+
+  border-bottom-left-radius: 20px;
+  background-color: #5b7c52;
+
+  transition: all 0.3s ease-in-out;
+
+  &.menu-open {
+    right: 0;
+  }
+}
+
+.mob-menu__nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  font-size: 24px;
+  color: var(--light-color);
+}
+
+.mob-menu__nav-link {
+  padding: 10px 0;
+}
+
+.mob-menu__nav-download {
+  margin-top: 40px;
+}
+
+.mob-menu__user-download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 160px;
+  min-height: 40px;
+
+  line-height: 1.11;
+
+  padding: 10px 20px;
+
+  border-radius: 8px;
+  background-color: var(--accent);
+}
