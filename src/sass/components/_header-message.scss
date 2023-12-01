@@ -39,6 +39,8 @@
 
 .message__block {
   display: flex;
+
+  margin-left: 3px;
 }
 
 .message__read-btn {
@@ -69,7 +71,10 @@
   }
 }
 
-.message__btn--close {
+.message__btn-close {
+  width: 16px;
+  height: 16px;
+
   position: absolute;
   top: 50%;
   right: 0;

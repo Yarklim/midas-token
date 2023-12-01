@@ -19,14 +19,23 @@
 }
 
 .header__nav-item {
+  display: flex;
+  align-items: center;
+
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: -0.256px;
   color: var(--text-56);
+
+  transition: all 0.3s ease;
 }
 
 .header__nav-item.active {
   color: var(--text-light);
+}
+
+.header__nav-link {
+  padding: 10px 0;
 }
 
 .header__user-actions {
@@ -37,4 +46,9 @@
   line-height: 1.5;
   letter-spacing: -0.256px;
   color: var(--text-56);
+}
+
+.user-actions__select-icon {
+  width: 20px;
+  height: 20px;
 }

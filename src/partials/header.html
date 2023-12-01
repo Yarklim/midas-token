@@ -15,13 +15,13 @@
               class="message__read-arrow"
               src="./images/icons/arrows/right-arrow.svg"
               alt="img"
-              width="14"
-              height="14"
+              width="16"
+              height="16"
             />
           </button>
         </p>
       </div>
-      <button class="message__btn--close" aria-label="to close message">
+      <button class="message__btn-close" aria-label="to close message">
         <svg width="16" height="16" class="message__icon--close">
           <use href="./images/icons/icons.svg#close"></use>
         </svg>
@@ -40,24 +40,30 @@
         <nav class="header__nav--wrapper">
           <ul class="header__nav-list">
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Platform</a>
+              <a href="#" class="header__nav-link" aria-label="to">Platform</a>
             </li>
             <li class="header__nav-item active">
-              <a href="#" class="header__nav-link">Midas Coin</a>
+              <a href="#" class="header__nav-link" aria-label="to"
+                >Midas Coin</a
+              >
             </li>
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link">YAPs</a>
+              <a href="#" class="header__nav-link" aria-label="to">YAPs</a>
             </li>
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Resources</a>
+              <a href="#" class="header__nav-link" aria-label="to">Resources</a>
+			  <button class="header__nav-select" aria-label="user menu">
+            <svg width="20" height="20" class="nav-select-icon">
+              <use href="./images/icons/icons.svg#down"></use>
+            </svg>
             </li>
           </ul>
         </nav>
 
         <div class="header__user-actions">
           <p class="user-name">Aurielien Solamon</p>
-          <button class="user-actions__select">
-            <svg width="32" height="32" class="user-actions__select-icon">
+          <button class="user-actions__select" aria-label="user menu">
+            <svg width="20" height="20" class="user-actions__select-icon">
               <use href="./images/icons/icons.svg#down"></use>
             </svg>
           </button>

@@ -297,6 +297,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 3px;
 }
 
 .message__read-btn {
@@ -330,7 +331,9 @@ button {
   }
 }
 
-.message__btn--close {
+.message__btn-close {
+  width: 16px;
+  height: 16px;
   position: absolute;
   top: 50%;
   right: 0;
@@ -416,14 +419,26 @@ button {
 }
 
 .header__nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: -0.256px;
   color: var(--text-56);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .header__nav-item.active {
   color: var(--text-light);
+}
+
+.header__nav-link {
+  padding: 10px 0;
 }
 
 .header__user-actions {
@@ -437,4 +452,9 @@ button {
   line-height: 1.5;
   letter-spacing: -0.256px;
   color: var(--text-56);
+}
+
+.user-actions__select-icon {
+  width: 20px;
+  height: 20px;
 }/*# sourceMappingURL=index.css.map */
