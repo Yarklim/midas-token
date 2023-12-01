@@ -8,7 +8,7 @@
 
   cursor: pointer;
 
-  @media screen and (max-width: 991.8px) {
+  @media screen and (max-width: 909.8px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,11 +32,11 @@
 .bar {
   display: block;
 
-  width: 30px;
+  width: 24px;
   height: 3px;
 
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 
-  background-color: var(--accent);
+  background-color: var(--light-color);
 }

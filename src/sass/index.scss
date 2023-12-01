@@ -1,11 +1,20 @@
+// ==== Fonts ====
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700;900&family=Roboto:wght@700&display=swap');
+
 // ==== Base styles ====
 @import './base/reset';
 @import './base/common';
+@import './base/section';
 @import './base/container';
 
 // ==== Utils ====
 @import './utils/vars';
 @import './utils/visually-hidden';
 
+// ==== Components ====
+@import './components/header-message';
+@import './components/burger-menu';
+
 // ==== Layouts ====
-@import './layout/example';
+@import './layout/header';
+@import './layout/footer';

@@ -1,3 +1,75 @@
 <header class="header">
-  <h1>HEADER</h1>
+  <div class="header__wrapper container">
+    <!-- Header Message -->
+    <div class="header__message">
+      <div class="header__message-text--wrapper">
+        <p class="message-text">
+          Delisting announcement. 12 DeFi and Masternode assets will be
+          delisted.
+        </p>
+        <p class="message-text message__block">
+          Withdraw by March 31.
+          <button class="message__read-btn js-modal" aria-label="to Read More">
+            Read more
+            <img
+              class="message__read-arrow"
+              src="./images/icons/arrows/right-arrow.svg"
+              alt="img"
+              width="14"
+              height="14"
+            />
+          </button>
+        </p>
+      </div>
+      <button class="message__btn--close" aria-label="to close message">
+        <svg width="16" height="16" class="message__icon--close">
+          <use href="./images/icons/icons.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <!-- ====================== -->
+
+    <div class="header__navigation-bar">
+      <a href="index.html" class="header__logo">
+        <svg width="56" height="64" class="logo-icon">
+          <use href="./images/icons/icons.svg#midas"></use>
+        </svg>
+      </a>
+
+      <div class="header__menu">
+        <nav class="header__nav--wrapper">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Platform</a>
+            </li>
+            <li class="header__nav-item active">
+              <a href="#" class="header__nav-link">Midas Coin</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">YAPs</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Resources</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__user-actions">
+          <p class="user-name">Aurielien Solamon</p>
+          <button class="user-actions__select">
+            <svg width="32" height="32" class="user-actions__select-icon">
+              <use href="./images/icons/icons.svg#down"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Burger Menu -->
+    <div class="burger-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </div>
 </header>

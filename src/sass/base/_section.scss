@@ -1,0 +1,6 @@
+.section {
+  padding-top: clamp(1.875rem, 0.268rem + 8.04vw, 7.5rem);
+  padding-bottom: clamp(1.875rem, 0.268rem + 8.04vw, 7.5rem);
+
+  border-radius: clamp(1.25rem, 0.75rem + 2.5vw, 3rem);
+}

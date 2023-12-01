@@ -2,9 +2,8 @@
   max-width: 1440px;
 
   margin: 0 auto;
-  padding: clamp(1.875rem, 0.268rem + 8.04vw, 7.5rem)
-    clamp(0.938rem, -1.116rem + 10.27vw, 8.125rem);
+  padding-left: clamp(0.938rem, -1.116rem + 10.27vw, 8.125rem);
+  padding-right: clamp(0.938rem, -1.116rem + 10.27vw, 8.125rem);
 
-  border-radius: 48px;
   background-color: var(--background-primary);
 }

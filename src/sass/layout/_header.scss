@@ -1,0 +1,40 @@
+.header__navigation-bar {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: 28px;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 32px;
+}
+
+.header__nav-item {
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.256px;
+  color: var(--text-56);
+}
+
+.header__nav-item.active {
+  color: var(--text-light);
+}
+
+.header__user-actions {
+  display: flex;
+  align-items: center;
+
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.256px;
+  color: var(--text-56);
+}

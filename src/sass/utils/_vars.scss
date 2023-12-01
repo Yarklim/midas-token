@@ -9,7 +9,7 @@
   --text-24: rgba(255, 255, 255, 0.24);
   --text-36: rgba(255, 255, 255, 0.36);
   --text-56: rgba(255, 255, 255, 0.56);
-  --text-8: rgba(255, 255, 255, 0.08);
+  --text-08: rgba(255, 255, 255, 0.08);
 
   // ---------- Colors ----------
   --accent-primary: #43a1f7;
@@ -22,12 +22,22 @@
   // ---------- Backgrounds ----------
   --background-primary: #0a0c0f;
   --background-blue: rgba(67, 161, 247, 0.16);
-  --background-4: rgba(255, 255, 255, 0.04);
-  --background-8: rgba(255, 255, 255, 0.08);
+  --background-04: rgba(255, 255, 255, 0.04);
+  --background-08: rgba(255, 255, 255, 0.08);
   --background-12: rgba(255, 255, 255, 0.12);
+  --background-50: rgba(255, 255, 255, 0.5);
   --background-rose: rgba(255, 104, 195, 0.16);
 
   // ---------- Gradients ------------
+  --linear-grad-main: linear-gradient(
+    to left,
+    #577cff,
+    #9b4cff,
+    #fb4a4a,
+    #9b4cff,
+    #43d7f7,
+    #00f69e
+  );
   --linear-grad-blue: linear-gradient(268deg, #577cff 0%, #4cbfff 100%);
   --linear-grad-rose: linear-gradient(268deg, #fb4a4a 0%, #9b4cff 100%);
   --linear-grad-yellow: linear-gradient(44deg, #ffc657 24.69%, #ffd977 75.86%);
@@ -36,6 +46,17 @@
     90deg,
     #ba62ff 18.51%,
     #57b1f2 80.43%
+  );
+
+  --radial-grad-seven: radial-gradient(
+    57219.18% 137.55% at 92.97% 0%,
+    rgba(67, 161, 247, 0.8) 0%,
+    rgba(134, 67, 220, 0.8) 14.06%,
+    rgba(247, 67, 175, 0.8) 28.65%,
+    rgba(247, 128, 112, 0.8) 47.85%,
+    rgba(190, 64, 255, 0.8) 57.29%,
+    rgba(32, 188, 255, 0.8) 71.88%,
+    rgba(0, 246, 158, 0.8) 100%
   );
 
   --radial-grad-rose: radial-gradient(
