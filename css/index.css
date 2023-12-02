@@ -540,9 +540,12 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
@@ -624,6 +627,70 @@ button {
 .item-grah--column:nth-child(10) {
   height: 100%;
   background: var(--background-08);
+}
+
+.item-graph__label {
+  width: 56px;
+  height: 32px;
+  display: block;
+  position: relative;
+  margin: 0 20px;
+  background: var(--background-50);
+  border-radius: 200px;
+  -webkit-box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+          box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.item-graph__label:after {
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  border-radius: 50%;
+  background: var(--light-color);
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.item-graph__label-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 10;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+input:checked + .item-graph__label {
+  background: linear-gradient(268deg, #577cff 0%, #4cbfff 100%), #43a1f7;
+}
+
+input:checked + .item-graph__label:after {
+  left: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+input:checked + .item-graph__label-icon {
+  left: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .hero__card-item--desc {
