@@ -1,2 +1,2 @@
-# midas-token
-Midas Token - Prototype Website Layout
+# Midas Token
+## Landing Page Prototype
