@@ -2,6 +2,8 @@
   visibility: hidden;
   height: 0;
 
+  background-color: var(--background-primary);
+
   @media screen and (min-width: 910px) {
     visibility: visible;
     height: auto;
