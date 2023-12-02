@@ -1,21 +1,21 @@
 {
-  "name": "parcel-project-template",
+  "name": "midas-token",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Yarklim.github.io/organic-food",
+  "homepage": "https://Yarklim.github.io/midas-token",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /organic-food/"
+    "build": "parcel build src/*.html --public-url /midas-token/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yarklim/organic-food.git"
+    "url": "git+https://github.com/Yarklim/midas-token.git"
   },
   "keywords": [],
   "author": "yarklim",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Yarklim/organic-food/issues"
+    "url": "https://github.com/Yarklim/midas-token/issues"
   },
   "dependencies": {
     "modern-normalize": "^2.0.0"
