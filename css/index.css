@@ -457,4 +457,66 @@ button {
 .user-actions__select-icon {
   width: 20px;
   height: 20px;
+}
+
+.footer {
+  visibility: hidden;
+  height: 0;
+}
+@media screen and (min-width: 910px) {
+  .footer {
+    visibility: visible;
+    height: auto;
+  }
+}
+
+.footer__wrapper {
+  padding-top: 38px;
+  padding-bottom: 56px;
+}
+
+.footer__links-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 40px;
+}
+
+.footer__item-list {
+  width: 210px;
+}
+
+.footer__item-list--title {
+  font-weight: 700;
+  line-height: 1.55;
+  letter-spacing: -0.36px;
+  color: var(--text-light);
+}
+
+.footer__item-list--title.dark {
+  color: var(--text-24);
+}
+
+.footer__item-sublist {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.footer__item-sublist--item {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.32px;
+  color: var(--text-56);
+  text-wrap: balance;
 }/*# sourceMappingURL=index.css.map */
