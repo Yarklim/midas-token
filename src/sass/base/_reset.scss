@@ -31,9 +31,10 @@ a,
 a:link,
 a:visited,
 a:hover {
+  display: inline-block;
+
   color: inherit;
   text-decoration: none;
-  //   display: inline-block;
 }
 
 /* Common */
