@@ -63,7 +63,7 @@
   backdrop-filter: blur(60px);
 }
 
-.her__card-item--graph {
+.hero__card-item--graph {
   width: 100%;
   height: clamp(8rem, 7.857rem + 0.71vw, 8.5rem);
 
@@ -72,21 +72,8 @@
   align-items: center;
 
   position: relative;
-}
 
-.item-graph__btn {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-
-  padding: 6px 12px;
-
-  border-radius: 16px;
-  background: linear-gradient(268deg, #577cff 0%, #4cbfff 100%), #43a1f7;
+  overflow: hidden;
 }
 
 .item-grah__columns-list {
@@ -101,6 +88,28 @@
 }
 
 // First card graph
+.item-graph__btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  padding: 6px 12px;
+
+  border-radius: 16px;
+  background: linear-gradient(268deg, #577cff 0%, #4cbfff 100%), #43a1f7;
+
+  transition: all 0.3s ease;
+
+  &:focus-visible,
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
 .item-grah--column {
   width: 24px;
   height: 100%;
@@ -175,7 +184,7 @@
 
     position: absolute;
     top: 2px;
-    left: 4px;
+    left: 2px;
 
     border-radius: 50%;
     background: var(--light-color);
@@ -191,7 +200,7 @@
 
   position: absolute;
   top: 50%;
-  left: 8px;
+  left: 10%;
   transform: translateY(-50%);
   z-index: 10;
 
@@ -205,19 +214,43 @@ input {
 }
 input:checked + .item-graph__label {
   background: linear-gradient(268deg, #577cff 0%, #4cbfff 100%), #43a1f7;
+
+  & .item-graph__label-icon {
+    top: 50%;
+    left: 100%;
+    transform: translate(-115%, -50%);
+  }
 }
 input:checked + .item-graph__label:after {
-  left: 100%;
-  transform: translateX(-100%);
-}
-input:checked + .item-graph__label-icon {
   left: 100%;
   transform: translateX(-100%);
 }
 
 // ===================================
 
+// Third card graph
+
+.item-graph__icon-midas {
+  position: absolute;
+  z-index: 20;
+
+  border: 1px solid rgb(88, 88, 88);
+  border-radius: 50%;
+  background: rgb(27, 27, 27);
+}
+// ===================================
+
 .hero__card-item--desc {
   margin-top: clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
   text-align: center;
+}
+
+.hero__card-title {
+  font-size: clamp(1.25rem, 1.136rem + 0.57vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.4px;
+  color: var(--White, #fff);
+
+  margin-bottom: clamp(0.5rem, 0.386rem + 0.57vw, 0.75rem);
 }
