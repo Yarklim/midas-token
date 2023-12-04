@@ -1,6 +1,12 @@
 .mobile__menu {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  position: fixed;
   right: -100%;
+
+  z-index: 10;
 
   width: clamp(19.375rem, 16.692rem + 13.41vw, 25rem);
 
@@ -34,6 +40,24 @@
 
 .mobile__nav-link {
   padding: 10px;
+}
+
+.mobile__user-name {
+  display: flex;
+  align-items: center;
+
+  text-align: right;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--light-color);
+
+  padding: 10px;
+}
+
+.mobile__user-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
 }
 
 .mobile-select-icon {

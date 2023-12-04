@@ -37,7 +37,8 @@
 
 .hero__cards-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: clamp(0.375rem, 0.125rem + 1.25vw, 1.25rem);
 
   margin-top: clamp(4rem, 2.714rem + 6.43vw, 8.5rem);

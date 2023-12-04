@@ -1,2 +1,2 @@
-// import './mobile-menu';
+import './mobile-menu';
 import './hide-block';
