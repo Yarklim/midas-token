@@ -616,18 +616,24 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   gap: clamp(0.375rem, 0.125rem + 1.25vw, 1.25rem);
   margin-top: clamp(4rem, 2.714rem + 6.43vw, 8.5rem);
 }
+@media screen and (max-width: 767px) {
+  .hero__cards-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 .hero__card-item {
   width: clamp(18.75rem, 17.321rem + 7.14vw, 23.75rem);
-  height: clamp(16.25rem, 14.964rem + 6.43vw, 20.75rem);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -704,7 +710,7 @@ button {
 }
 
 .item-grah--column {
-  width: 24px;
+  width: 6.3%;
   height: 100%;
   border-radius: 8px;
 }
