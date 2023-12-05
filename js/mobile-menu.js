@@ -14,12 +14,24 @@ const resizeObserver = new ResizeObserver(entries => {
   }
 });
 
-resizeObserver.observe(header);
+const menuOpen = () => {
+  burger.classList.add('is-open');
 
-burger.addEventListener('click', () => {
-  burger.classList.toggle('is-open');
+  resizeObserver.observe(header);
 
   mobMenu.style.top = `${headerBlockHeight}px`;
+};
 
-  mobMenu.classList.toggle('menu-open');
+const menuClose = () => {
+  burger.classList.remove('is-open');
+
+  mobMenu.style.top = '-100%';
+};
+
+burger.addEventListener('click', () => {
+  if (burger.classList.value.includes('is-open')) {
+    menuClose();
+  } else {
+    menuOpen();
+  }
 });

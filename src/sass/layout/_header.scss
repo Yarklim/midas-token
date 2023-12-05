@@ -1,7 +1,7 @@
 .header {
   background-color: var(--background-primary);
 
-  //   overflow: hidden;
+  z-index: 999;
 }
 
 .header__navigation-bar {
@@ -19,7 +19,7 @@
     justify-content: space-between;
     align-items: center;
 
-    position: static;
+    position: relative;
 
     margin-left: 28px;
 

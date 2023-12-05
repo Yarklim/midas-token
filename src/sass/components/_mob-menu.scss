@@ -3,23 +3,20 @@
   flex-direction: column;
   align-items: flex-end;
 
-  position: fixed;
-  right: -100%;
+  position: absolute;
+  right: 0;
+  top: -100%;
 
   z-index: 10;
 
   width: clamp(19.375rem, 16.692rem + 13.41vw, 25rem);
 
-  padding: 50px;
+  padding: 30px 50px;
 
   border-bottom-left-radius: 20px;
   background: var(--linear-grad-blue);
 
-  transition: right 0.3s ease-in-out;
-
-  &.menu-open {
-    right: 0;
-  }
+  transition: top 0.3s ease-in-out;
 }
 
 .mobile__nav-list {

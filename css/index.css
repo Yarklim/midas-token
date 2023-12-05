@@ -405,18 +405,16 @@ button {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  position: fixed;
-  right: -100%;
+  position: absolute;
+  right: 0;
+  top: -100%;
   z-index: 10;
   width: clamp(19.375rem, 16.692rem + 13.41vw, 25rem);
-  padding: 50px;
+  padding: 30px 50px;
   border-bottom-left-radius: 20px;
   background: var(--linear-grad-blue);
-  -webkit-transition: right 0.3s ease-in-out;
-  transition: right 0.3s ease-in-out;
-}
-.mobile__menu.menu-open {
-  right: 0;
+  -webkit-transition: top 0.3s ease-in-out;
+  transition: top 0.3s ease-in-out;
 }
 
 .mobile__nav-list {
@@ -481,6 +479,7 @@ button {
 
 .header {
   background-color: var(--background-primary);
+  z-index: 999;
 }
 
 .header__navigation-bar {
@@ -507,7 +506,7 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: static;
+    position: relative;
     margin-left: 28px;
     background: none;
   }
