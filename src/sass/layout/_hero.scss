@@ -1,5 +1,4 @@
 .hero {
-  padding-top: clamp(2rem, 1.143rem + 4.29vw, 5rem);
   padding-bottom: clamp(1.875rem, 0.268rem + 8.04vw, 7.5rem);
 
   border-bottom-left-radius: clamp(1.25rem, 0.75rem + 2.5vw, 3rem);
@@ -16,7 +15,7 @@
   font-weight: 700;
   line-height: clamp(3.5rem, 2.357rem + 5.71vw, 7.5rem);
   text-shadow: 0px 32px 64px rgba(255, 255, 255, 0.08);
-  letter-spacing: -5px;
+  letter-spacing: -4px;
   color: var(--text-light);
 }
 

@@ -1,7 +1,21 @@
 .header {
-  background-color: var(--background-primary);
+  width: 100%;
 
+  position: fixed;
+  top: 0;
   z-index: 999;
+
+  background-color: rgba(10, 12, 15, 0.7);
+}
+
+.header__wrapper {
+  background-color: rgba(10, 12, 15, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+.logo-icon {
+  width: 56px;
+  height: 64px;
 }
 
 .header__navigation-bar {

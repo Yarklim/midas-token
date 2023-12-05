@@ -10,7 +10,11 @@ const resizeObserver = new ResizeObserver(entries => {
 
     headerBlockHeight = newHeight;
 
-    mobMenu.style.top = `${headerBlockHeight}px`;
+    if (burger.classList.value.includes('is-open')) {
+      mobMenu.style.top = `${headerBlockHeight + window.scrollY}px`;
+    } else {
+      mobMenu.style.top = '-150%';
+    }
   }
 });
 
@@ -19,13 +23,13 @@ const menuOpen = () => {
 
   resizeObserver.observe(header);
 
-  mobMenu.style.top = `${headerBlockHeight}px`;
+  mobMenu.style.top = `${headerBlockHeight + window.scrollY}px`;
 };
 
 const menuClose = () => {
   burger.classList.remove('is-open');
 
-  mobMenu.style.top = '-100%';
+  mobMenu.style.top = '-150%';
 };
 
 burger.addEventListener('click', () => {
