@@ -1,12 +1,10 @@
 .footer {
-  visibility: hidden;
-  height: 0;
+  display: none;
 
   background-color: var(--background-primary);
 
   @media screen and (min-width: 910px) {
-    visibility: visible;
-    height: auto;
+    display: block;
   }
 }
 .footer__wrapper {

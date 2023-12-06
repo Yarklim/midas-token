@@ -164,7 +164,6 @@ button {
   padding-left: clamp(0.938rem, -1.116rem + 10.27vw, 8.125rem);
   padding-right: clamp(0.938rem, -1.116rem + 10.27vw, 8.125rem);
   background-color: var(--background-primary);
-  overflow: hidden;
 }
 
 :root {
@@ -256,6 +255,7 @@ button {
 }
 
 .header__message {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,7 +483,7 @@ button {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 500;
   background-color: rgba(10, 12, 15, 0.7);
 }
 
@@ -499,6 +499,7 @@ button {
 }
 
 .header__navigation-bar {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -510,6 +511,7 @@ button {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
 }
 @media screen and (min-width: 910px) {
   .header__navigation-bar {
@@ -531,10 +533,15 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  z-index: 1000;
   padding-bottom: 20px;
-  position: relative;
   border-bottom: 1px solid var(--background-12);
-  background: none;
+  background-color: rgba(10, 12, 15, 0.9);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 @media screen and (min-width: 768px) {
   .header__menu {
@@ -552,9 +559,13 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: static;
     margin-left: 28px;
     padding-bottom: 0;
     border-bottom: none;
+    background-color: transparent;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
   }
 }
 
@@ -594,6 +605,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1100;
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: -0.256px;
@@ -902,14 +914,12 @@ input:checked + .item-graph__label:after {
 }
 
 .footer {
-  visibility: hidden;
-  height: 0;
+  display: none;
   background-color: var(--background-primary);
 }
 @media screen and (min-width: 910px) {
   .footer {
-    visibility: visible;
-    height: auto;
+    display: block;
   }
 }
 

@@ -29,3 +29,8 @@ menuItems.forEach(item =>
     }
   })
 );
+
+window.matchMedia('(min-width: 910px)').addEventListener('change', e => {
+  if (!e.matches) return;
+  menuClose();
+});
