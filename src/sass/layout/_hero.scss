@@ -67,7 +67,7 @@
 
 .hero__card-item--graph {
   width: 100%;
-  height: clamp(8rem, 7.857rem + 0.71vw, 8.5rem);
+  height: clamp(6.25rem, -0.614rem + 12.07vw, 8.438rem);
 
   display: flex;
   justify-content: center;
@@ -160,6 +160,12 @@
 // ================
 
 // Second card graph
+.item-graph__icon {
+  @media screen and (min-width: 910px) {
+    width: clamp(3.125rem, -1.19rem + 7.59vw, 4.5rem);
+  }
+}
+
 .item-graph__label {
   width: 56px;
   height: 32px;
@@ -195,6 +201,9 @@
     @media screen and (min-width: 910px) {
       width: 14px;
       height: 14px;
+
+      top: clamp(0.063rem, -0.134rem + 0.34vw, 0.125rem);
+      left: clamp(0.063rem, -0.134rem + 0.34vw, 0.125rem);
     }
   }
 
@@ -256,7 +265,7 @@ input:checked + .item-graph__label:after {
 
 .item-graph__icon-midas {
   @media screen and (min-width: 910px) {
-    width: clamp(5.125rem, 2.379rem + 4.83vw, 6rem);
+    width: clamp(4.375rem, -0.724rem + 8.97vw, 6rem);
   }
 }
 // ===================================
