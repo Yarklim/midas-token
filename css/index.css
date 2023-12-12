@@ -870,6 +870,18 @@ button {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
+@media screen and (min-width: 910px) {
+  .item-graph__label:after {
+    width: 14px;
+    height: 14px;
+  }
+}
+@media screen and (min-width: 910px) {
+  .item-graph__label {
+    width: 28px;
+    height: 16px;
+  }
+}
 
 .item-graph__label-icon {
   width: 20px;
@@ -882,6 +894,12 @@ button {
   z-index: 10;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+}
+@media screen and (min-width: 910px) {
+  .item-graph__label-icon {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 input {
@@ -914,6 +932,12 @@ input:checked + .item-graph__label:after {
   background: rgb(27, 27, 27);
 }
 
+@media screen and (min-width: 910px) {
+  .item-graph__icon-midas {
+    width: clamp(5.125rem, 2.379rem + 4.83vw, 6rem);
+  }
+}
+
 .hero__card-item--desc {
   margin-top: clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
   text-align: center;
@@ -921,11 +945,16 @@ input:checked + .item-graph__label:after {
 }
 
 .hero__card-title {
-  font-size: clamp(1.25rem, 1.136rem + 0.57vw, 1.5rem);
+  font-size: 24px;
   font-weight: 600;
   line-height: 1.4;
   letter-spacing: -0.4px;
   color: var(--White, #fff);
+}
+@media screen and (min-width: 910px) {
+  .hero__card-title {
+    font-size: clamp(0.875rem, -0.198rem + 1.89vw, 1.5rem);
+  }
 }
 
 .hero__card-link {
