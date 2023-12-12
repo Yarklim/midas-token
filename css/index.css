@@ -860,6 +860,9 @@ button {
   background: var(--background-08);
 }
 
+.item-graph__icon {
+  width: clamp(4.5rem, 3.429rem + 5.36vw, 6rem);
+}
 @media screen and (min-width: 910px) {
   .item-graph__icon {
     width: clamp(3.125rem, -1.19rem + 7.59vw, 4.5rem);
