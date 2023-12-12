@@ -899,16 +899,16 @@ button {
 }
 @media screen and (min-width: 910px) {
   .item-graph__label:after {
-    width: 14px;
-    height: 14px;
+    width: clamp(0.875rem, -1.871rem + 4.83vw, 1.75rem);
+    height: clamp(0.875rem, -1.871rem + 4.83vw, 1.75rem);
     top: clamp(0.063rem, -0.134rem + 0.34vw, 0.125rem);
     left: clamp(0.063rem, -0.134rem + 0.34vw, 0.125rem);
   }
 }
 @media screen and (min-width: 910px) {
   .item-graph__label {
-    width: 28px;
-    height: 16px;
+    width: clamp(1.75rem, -3.741rem + 9.66vw, 3.5rem);
+    height: clamp(1rem, -2.138rem + 5.52vw, 2rem);
   }
 }
 
@@ -926,8 +926,8 @@ button {
 }
 @media screen and (min-width: 910px) {
   .item-graph__label-icon {
-    width: 10px;
-    height: 10px;
+    width: clamp(0.625rem, -1.336rem + 3.45vw, 1.25rem);
+    height: clamp(0.625rem, -1.336rem + 3.45vw, 1.25rem);
   }
 }
 
