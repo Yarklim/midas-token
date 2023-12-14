@@ -154,6 +154,7 @@ button {
 }
 
 .section {
+  margin-top: 1px;
   padding-top: clamp(1.875rem, 0.268rem + 8.04vw, 7.5rem);
   padding-bottom: clamp(1.875rem, 0.268rem + 8.04vw, 7.5rem);
   border-radius: clamp(1.25rem, 0.75rem + 2.5vw, 3rem);
@@ -266,7 +267,7 @@ button {
           justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: start;
+          align-items: flex-start;
   padding: 8px 0;
   position: relative;
   border-bottom: 1px solid;
@@ -431,7 +432,7 @@ button {
           flex-direction: column;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
   gap: 20px;
 }
 
@@ -1004,6 +1005,63 @@ input:checked + .item-graph__label:after {
 
 .hero__card-link {
   margin-top: clamp(0.5rem, 0.386rem + 0.57vw, 0.75rem);
+}
+
+.metrics__title {
+  text-align: center;
+  font-size: clamp(3rem, 0.804rem + 9.76vw, 8.125rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -4.5px;
+  color: var(--text-light);
+  text-shadow: 0px 32px 64px rgba(255, 255, 255, 0.08);
+}
+
+.metrics__cards--list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 560px) {
+  .metrics__cards--list {
+    gap: 20px;
+  }
+}
+
+.metrics__card--item {
+  width: 100%;
+  padding: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.4px;
+  color: var(--text-light);
+  border-radius: 32px;
+  border: 1px solid var(--background-08);
+  background: var(--background-08);
+  -webkit-box-shadow: 0px 40px 64px -30px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 40px 64px -30px rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+@media screen and (min-width: 560px) {
+  .metrics__card--item {
+    width: calc((100% - 20px) / 2);
+    max-width: 480px;
+    font-size: clamp(1.125rem, 0.359rem + 2.19vw, 2rem);
+  }
+}
+
+.metrics__card--link {
+  margin-top: clamp(1.5rem, 0.804rem + 3.1vw, 3.125rem);
 }
 
 .footer {
