@@ -50,19 +50,19 @@
 .metrics__card--link {
   margin-top: clamp(1.5rem, 0.804rem + 3.1vw, 3.125rem);
 
-  display: flex;
-
-  //   position: relative;
+  position: relative;
 
   &::after {
     content: '';
-    width: 32px;
-    height: 32px;
+    width: 22px;
+    height: 22px;
 
-    // position: absolute;
-    top: 0;
-    right: 0;
+    position: absolute;
+    bottom: 50%;
+    right: -30px;
+    transform: translateY(50%);
     background-image: url(../src/images/icons/arrows/arrow-right.svg);
     background-repeat: no-repeat;
+    background-size: cover;
   }
 }
