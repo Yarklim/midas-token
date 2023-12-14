@@ -742,10 +742,10 @@ button {
   -webkit-backdrop-filter: blur(60px);
           backdrop-filter: blur(60px);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 560px) {
   .hero__card-item {
     width: calc((100% - 10px) / 2);
-    padding: clamp(1.5rem, 1.357rem + 0.71vw, 2rem) clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
+    padding: 24px clamp(1rem, -0.313rem + 3.75vw, 2.5rem);
   }
 }
 @media screen and (min-width: 1024px) {
@@ -863,9 +863,16 @@ button {
 .item-graph__icon {
   width: clamp(4.5rem, 3.429rem + 5.36vw, 6rem);
 }
+@media screen and (min-width: 560px) {
+  .item-graph__icon {
+    width: clamp(3.125rem, -0.875rem + 11.43vw, 5.625rem);
+    height: clamp(3.125rem, -0.875rem + 11.43vw, 5.625rem);
+  }
+}
 @media screen and (min-width: 910px) {
   .item-graph__icon {
     width: clamp(3.125rem, -1.19rem + 7.59vw, 4.5rem);
+    height: clamp(3.125rem, -1.19rem + 7.59vw, 4.5rem);
   }
 }
 
@@ -960,7 +967,11 @@ input:checked + .item-graph__label:after {
   border-radius: 50%;
   background: rgb(27, 27, 27);
 }
-
+@media screen and (min-width: 560px) {
+  .item-graph__icon-midas {
+    width: clamp(4.375rem, 1.775rem + 7.43vw, 6rem);
+  }
+}
 @media screen and (min-width: 910px) {
   .item-graph__icon-midas {
     width: clamp(4.375rem, -0.724rem + 8.97vw, 6rem);
@@ -974,11 +985,16 @@ input:checked + .item-graph__label:after {
 }
 
 .hero__card-title {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 1.4;
   letter-spacing: -0.4px;
   color: var(--White, #fff);
+}
+@media screen and (min-width: 560px) {
+  .hero__card-title {
+    font-size: clamp(0.875rem, 2.5vw, 1.5rem);
+  }
 }
 @media screen and (min-width: 910px) {
   .hero__card-title {
