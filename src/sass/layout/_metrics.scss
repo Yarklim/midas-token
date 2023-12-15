@@ -1,3 +1,9 @@
+.metrics__container {
+  background-image: url(../src/images/bg/ellipse-green_desk.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .metrics__title {
   text-align: center;
   font-size: clamp(3rem, 0.804rem + 9.76vw, 8.125rem);
@@ -8,6 +14,74 @@
   text-shadow: 0px 32px 64px rgba(255, 255, 255, 0.08);
 }
 
+.metrics__info--wrapper {
+  margin-top: clamp(2.5rem, 0.864rem + 8.18vw, 7rem);
+}
+
+.metrics__info--list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 58px;
+}
+
+.metrics__info--item {
+  text-align: center;
+}
+
+.metrics__info--item-value {
+  font-size: clamp(2rem, 1.455rem + 2.73vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  color: var(--text-light);
+}
+
+.metrics__info--item-text {
+  font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.48px;
+  color: var(--text-light);
+
+  margin-top: clamp(0.125rem, -0.011rem + 0.68vw, 0.5rem);
+}
+
+.metrics__graph--wrapper {
+  width: clamp(17.5rem, 7.409rem + 50.45vw, 45.25rem); // 724 - 280
+  height: clamp(8.75rem, 3.682rem + 25.34vw, 22.688rem); // 362 - 140
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 63px auto 0 auto;
+
+  background-image: url(../src/images/icons/decor/ellipse.svg);
+  background-repeat: no-repeat;
+}
+
+.metrics__graph--info {
+  text-align: center;
+}
+
+.metrics__graph--info-value {
+  font-size: clamp(2.5rem, 1.591rem + 4.55vw, 5rem);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -2.5px;
+  color: var(--text-light);
+}
+
+.metrics__graph--info-text {
+  font-size: clamp(1rem, 0.636rem + 1.82vw, 2rem);
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.256px;
+  color: var(--text-light);
+}
+
 .metrics__cards--list {
   width: 100%;
 
@@ -16,6 +90,8 @@
   flex-wrap: wrap;
   gap: 8px;
   flex-wrap: wrap;
+
+  margin-top: -10px;
 
   @media screen and (min-width: 560px) {
     gap: 20px;
