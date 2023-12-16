@@ -1172,7 +1172,7 @@ input:checked + .item-graph__label:after {
 }
 @media screen and (min-width: 560px) {
   .stake__container {
-    background-position: 10% 120%;
+    background-position: 0 120%;
     background-size: 70%;
   }
 }
