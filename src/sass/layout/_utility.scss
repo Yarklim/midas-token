@@ -1,0 +1,174 @@
+.utility__title {
+  font-size: clamp(3rem, 0.804rem + 9.76vw, 8.125rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -4.5px;
+  color: var(---text-light);
+  text-shadow: 0px 32px 64px rgba(255, 255, 255, 0.08);
+}
+
+.utility__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1.5rem, 0.845rem + 2.91vw, 2.5rem);
+}
+
+.utility__item {
+  width: 580px;
+  height: 432px;
+}
+
+.farming__dots {
+  width: 484px;
+  height: 304px;
+
+  background-image: url(../src/images/icons/farming/dots1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  animation: dots 3s infinite;
+}
+
+@keyframes dots {
+  0% {
+    background-image: url(../src/images/icons/farming/dots1.svg);
+  }
+  33% {
+    background-image: url(../src/images/icons/farming/dots2.svg);
+  }
+  66% {
+    background-image: url(../src/images/icons/farming/dots3.svg);
+  }
+}
+
+.apy__icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 43px;
+}
+
+.apy__icons--center-wrapper {
+  display: flex;
+  gap: 43px;
+}
+
+.apy__icons--left {
+  animation: ellipses-left 5s infinite;
+}
+@keyframes ellipses-left {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0.3;
+  }
+}
+
+.apy__icons--top {
+  transform: rotate(90deg);
+  animation: ellipses-top 5s infinite;
+}
+@keyframes ellipses-top {
+  0% {
+    transform: rotate(90deg) scale(0.5);
+    opacity: 0.3;
+  }
+  50% {
+    transform: rotate(90deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(90deg) scale(0.5);
+    opacity: 0.3;
+  }
+}
+
+.apy__icons--right {
+  transform: rotate(180deg);
+  animation: ellipses-right 5s infinite;
+}
+
+@keyframes ellipses-right {
+  0% {
+    transform: rotate(180deg) scale(0.5);
+    opacity: 0.3;
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(180deg) scale(0.5);
+    opacity: 0.3;
+  }
+}
+
+.apy__icons--bottom {
+  transform: rotate(-90deg);
+  animation: ellipses-bottom 5s infinite;
+}
+
+@keyframes ellipses-bottom {
+  0% {
+    transform: rotate(-90deg) scale(0.5);
+    opacity: 0.3;
+  }
+  50% {
+    transform: rotate(-90deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-90deg) scale(0.5);
+    opacity: 0.3;
+  }
+}
+
+.apy__icons--center {
+  width: 140px;
+  height: 140px;
+
+  animation: lightning 5s infinite;
+}
+@keyframes lightning {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0.3;
+  }
+}
+
+.utility__button {
+  margin-top: clamp(2.5rem, 1.857rem + 2.86vw, 4rem);
+
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 22px;
+    height: 22px;
+
+    position: absolute;
+    bottom: 50%;
+    right: -30px;
+    transform: translateY(50%);
+    background-image: url(../src/images/icons/arrows/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
