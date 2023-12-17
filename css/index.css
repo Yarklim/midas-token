@@ -1359,12 +1359,21 @@ input:checked + .item-graph__label:after {
   text-shadow: 0px 32px 64px rgba(255, 255, 255, 0.08);
 }
 
+.utility__list {
+  margin-top: clamp(2.5rem, 1.964rem + 2.38vw, 3.75rem);
+}
+
 .utility__item--title {
   font-size: clamp(2rem, 0.714rem + 5.71vw, 5rem);
   font-weight: 700;
   line-height: 1;
   letter-spacing: -2.5px;
   color: var(--text-light);
+}
+@media screen and (min-width: 768px) {
+  .utility__item--title {
+    font-size: clamp(2rem, -1.429rem + 7.14vw, 5rem);
+  }
 }
 
 .utility__item--text {
@@ -1373,10 +1382,16 @@ input:checked + .item-graph__label:after {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: -0.35px;
+  text-align: justify;
   color: var(--text-36);
 }
 .utility__item--text span {
   color: var(--text-light);
+}
+@media screen and (min-width: 768px) {
+  .utility__item--text {
+    font-size: clamp(1rem, -0.143rem + 2.38vw, 2rem);
+  }
 }
 
 .utility__list {
@@ -1397,21 +1412,15 @@ input:checked + .item-graph__label:after {
   width: 100%;
   height: clamp(8.75rem, 0.929rem + 34.76vw, 27rem);
 }
-@media screen and (min-width: 560px) {
+@media screen and (min-width: 768px) {
   .utility__item {
     width: calc((100% - clamp(0.625rem, 0.078rem + 1.56vw, 1.25rem)) / 2);
   }
 }
 
-.graph-columns__item {
-  font-size: clamp(0.438rem, 0.089rem + 1.55vw, 1.25rem);
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: -0.2px;
-  color: var(--text-light);
-}
-
 .utility__graph-columns--list {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1420,15 +1429,61 @@ input:checked + .item-graph__label:after {
           column-gap: clamp(0.5rem, 0.179rem + 1.43vw, 1.25rem);
 }
 
+.graph-columns__item {
+  width: clamp(2.125rem, -1.804rem + 8.18vw, 5.563rem);
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: clamp(0.438rem, 0.089rem + 1.55vw, 1.25rem);
+  font-weight: 600;
+  line-height: 3;
+  letter-spacing: -0.2px;
+  color: var(--text-light);
+  border-radius: clamp(0.563rem, -0.509rem + 2.23vw, 1.5rem);
+  border: 2px solid var(--background-08);
+  background: var(--background-08);
+}
+.graph-columns__item.first {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+.graph-columns__item.second {
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+}
+.graph-columns__item.third {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+.graph-columns__item.fourth {
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
+}
+.graph-columns__item.fifth {
+  background: var(--linear-grad-yellow);
+}
+
 .farming__dots {
-  width: 484px;
-  height: 304px;
+  width: 100%;
+  height: 100%;
   background-image: url(../src/images/icons/farming/dots1.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   -webkit-animation: dots 3s infinite;
           animation: dots 3s infinite;
+}
+@media screen and (min-width: 768px) {
+  .farming__dots {
+    background-size: 120%;
+  }
 }
 
 @-webkit-keyframes dots {
@@ -1455,6 +1510,8 @@ input:checked + .item-graph__label:after {
   }
 }
 .apy__icons {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1462,9 +1519,6 @@ input:checked + .item-graph__label:after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1475,7 +1529,11 @@ input:checked + .item-graph__label:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 43px;
+  margin-left: -43px;
 }
 
 .apy__icons--left {
