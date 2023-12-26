@@ -1366,13 +1366,14 @@ input:checked + .item-graph__label:after {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-column-gap: 24px;
-     -moz-column-gap: 24px;
-          column-gap: 24px;
+  row-gap: 24px;
 }
 @media screen and (min-width: 560px) {
   .utility__list {
     row-gap: clamp(1.875rem, 0.234rem + 4.69vw, 3.75rem);
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
   }
 }
 
@@ -1801,6 +1802,7 @@ input:checked + .item-graph__label:after {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
+  height: clamp(8.75rem, 0.929rem + 34.76vw, 27rem);
 }
 
 .farming-text {
