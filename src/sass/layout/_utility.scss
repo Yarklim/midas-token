@@ -9,6 +9,23 @@
 
 .utility__list {
   margin-top: clamp(2.5rem, 1.964rem + 2.38vw, 3.75rem);
+
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+
+  @media screen and (min-width: 560px) {
+    row-gap: clamp(1.875rem, 0.234rem + 4.69vw, 3.75rem);
+  }
+}
+
+.utility__item {
+  width: 100%;
+  //   height: clamp(8.75rem, 0.929rem + 34.76vw, 27rem);
+
+  @media screen and (min-width: 560px) {
+    width: calc((100% - 24px) / 2);
+  }
 }
 
 .utility__item--title {
@@ -18,7 +35,7 @@
   letter-spacing: -2.5px;
   color: var(--text-light);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 560px) {
     font-size: clamp(2rem, -1.429rem + 7.14vw, 5rem);
   }
 }
@@ -37,27 +54,8 @@
     color: var(--text-light);
   }
 
-  @media screen and (min-width: 768px) {
-    font-size: clamp(1rem, -0.143rem + 2.38vw, 2rem);
-  }
-}
-
-.utility__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-
   @media screen and (min-width: 560px) {
-    gap: clamp(0.625rem, 0.078rem + 1.56vw, 1.25rem);
-  }
-}
-
-.utility__item {
-  width: 100%;
-  height: clamp(8.75rem, 0.929rem + 34.76vw, 27rem);
-
-  @media screen and (min-width: 768px) {
-    width: calc((100% - clamp(0.625rem, 0.078rem + 1.56vw, 1.25rem)) / 2);
+    font-size: clamp(1rem, -0.143rem + 2.38vw, 2rem);
   }
 }
 
@@ -71,8 +69,8 @@
 }
 
 .graph-columns__item {
-  width: clamp(2.125rem, -1.804rem + 8.18vw, 5.563rem);
-  height: 70%;
+  width: 35px;
+  height: 82%;
 
   display: flex;
   justify-content: center;
@@ -103,6 +101,10 @@
   &.fifth {
     background: var(--linear-grad-yellow);
   }
+
+  @media screen and (min-width: 560px) {
+    width: 17%;
+  }
 }
 
 // ===============================
@@ -119,7 +121,7 @@
 
   animation: dots 3s infinite;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 560px) {
     background-size: 120%;
   }
 }
@@ -273,5 +275,59 @@
     background-image: url(../src/images/icons/arrows/arrow-right.svg);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
+
+// ================= Items position ================
+.payout-graph {
+  height: clamp(11.25rem, 3.375rem + 35vw, 15.625rem);
+  order: 1;
+
+  @media screen and (min-width: 560px) {
+    height: clamp(12.5rem, 4.68rem + 22.34vw, 21.438rem);
+  }
+}
+
+.payout-text {
+  order: 2;
+
+  @media screen and (min-width: 560px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.farming-graph {
+  order: 3;
+}
+
+.farming-text {
+  order: 4;
+}
+
+.boost-graph {
+  order: 5;
+}
+
+.boost-text {
+  order: 6;
+}
+
+@media screen and (min-width: 560px) {
+  .payout-graph {
+    order: 2;
+  }
+
+  .payout-text {
+    order: 1;
+  }
+
+  .boost-graph {
+    order: 6;
+  }
+
+  .boost-text {
+    order: 5;
   }
 }

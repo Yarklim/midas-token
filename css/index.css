@@ -1361,6 +1361,28 @@ input:checked + .item-graph__label:after {
 
 .utility__list {
   margin-top: clamp(2.5rem, 1.964rem + 2.38vw, 3.75rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+@media screen and (min-width: 560px) {
+  .utility__list {
+    row-gap: clamp(1.875rem, 0.234rem + 4.69vw, 3.75rem);
+  }
+}
+
+.utility__item {
+  width: 100%;
+}
+@media screen and (min-width: 560px) {
+  .utility__item {
+    width: calc((100% - 24px) / 2);
+  }
 }
 
 .utility__item--title {
@@ -1370,7 +1392,7 @@ input:checked + .item-graph__label:after {
   letter-spacing: -2.5px;
   color: var(--text-light);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 560px) {
   .utility__item--title {
     font-size: clamp(2rem, -1.429rem + 7.14vw, 5rem);
   }
@@ -1388,33 +1410,9 @@ input:checked + .item-graph__label:after {
 .utility__item--text span {
   color: var(--text-light);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 560px) {
   .utility__item--text {
     font-size: clamp(1rem, -0.143rem + 2.38vw, 2rem);
-  }
-}
-
-.utility__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 24px;
-}
-@media screen and (min-width: 560px) {
-  .utility__list {
-    gap: clamp(0.625rem, 0.078rem + 1.56vw, 1.25rem);
-  }
-}
-
-.utility__item {
-  width: 100%;
-  height: clamp(8.75rem, 0.929rem + 34.76vw, 27rem);
-}
-@media screen and (min-width: 768px) {
-  .utility__item {
-    width: calc((100% - clamp(0.625rem, 0.078rem + 1.56vw, 1.25rem)) / 2);
   }
 }
 
@@ -1430,8 +1428,8 @@ input:checked + .item-graph__label:after {
 }
 
 .graph-columns__item {
-  width: clamp(2.125rem, -1.804rem + 8.18vw, 5.563rem);
-  height: 70%;
+  width: 35px;
+  height: 82%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1469,6 +1467,11 @@ input:checked + .item-graph__label:after {
 .graph-columns__item.fifth {
   background: var(--linear-grad-yellow);
 }
+@media screen and (min-width: 560px) {
+  .graph-columns__item {
+    width: 17%;
+  }
+}
 
 .farming__dots {
   width: 100%;
@@ -1480,7 +1483,7 @@ input:checked + .item-graph__label:after {
   -webkit-animation: dots 3s infinite;
           animation: dots 3s infinite;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 560px) {
   .farming__dots {
     background-size: 120%;
   }
@@ -1762,6 +1765,84 @@ input:checked + .item-graph__label:after {
   background-size: cover;
 }
 
+.payout-graph {
+  height: clamp(11.25rem, 3.375rem + 35vw, 15.625rem);
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+@media screen and (min-width: 560px) {
+  .payout-graph {
+    height: clamp(12.5rem, 4.68rem + 22.34vw, 21.438rem);
+  }
+}
+
+.payout-text {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+@media screen and (min-width: 560px) {
+  .payout-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.farming-graph {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.farming-text {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
+.boost-graph {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+}
+
+.boost-text {
+  -webkit-box-ordinal-group: 7;
+      -ms-flex-order: 6;
+          order: 6;
+}
+
+@media screen and (min-width: 560px) {
+  .payout-graph {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .payout-text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .boost-graph {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  .boost-text {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+}
 .footer {
   display: none;
   background-color: var(--background-primary);
