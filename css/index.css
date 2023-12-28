@@ -1941,6 +1941,7 @@ input:checked + .item-graph__label:after {
 }
 .support__info--item.item-back {
   margin-top: -55px;
+  margin-bottom: clamp(-6.25rem, -12.917rem + 33.33vw, -1.25rem);
   background-image: url(../src/images/icons/decor/ellipse-blue.svg);
   background-repeat: no-repeat;
 }
