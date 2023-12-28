@@ -1379,6 +1379,16 @@ input:checked + .item-graph__label:after {
 
 .utility__item {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 560px) {
   .utility__item {
@@ -1515,7 +1525,6 @@ input:checked + .item-graph__label:after {
 }
 .apy__icons {
   width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1526,18 +1535,24 @@ input:checked + .item-graph__label:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 43px;
+}
+
+.apy__icons-item {
+  width: clamp(5rem, 1.281rem + 10.63vw, 9.25rem);
+  height: clamp(5rem, 1.281rem + 10.63vw, 9.25rem);
 }
 
 .apy__icons--center-wrapper {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 43px;
-  margin-left: -43px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .apy__icons--left {
@@ -1707,8 +1722,8 @@ input:checked + .item-graph__label:after {
   }
 }
 .apy__icons--center {
-  width: 140px;
-  height: 140px;
+  width: clamp(5.625rem, 2.891rem + 7.81vw, 8.75rem);
+  height: clamp(5.625rem, 2.891rem + 7.81vw, 8.75rem);
   -webkit-animation: lightning 5s infinite;
           animation: lightning 5s infinite;
 }
@@ -1782,20 +1797,6 @@ input:checked + .item-graph__label:after {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
-}
-@media screen and (min-width: 560px) {
-  .payout-text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 
 .farming-graph {
