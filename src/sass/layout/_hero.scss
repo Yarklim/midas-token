@@ -317,6 +317,8 @@ input:checked + .item-graph__label:after {
 }
 
 .hero__card-link {
+  display: inline-block;
+
   margin-top: clamp(0.5rem, 0.386rem + 0.57vw, 0.75rem);
 
   color: var(--White, #fff);

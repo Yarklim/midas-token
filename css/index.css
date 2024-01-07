@@ -34,7 +34,6 @@ a,
 a:link,
 a:visited,
 a:hover {
-  display: inline-block;
   text-decoration: none;
 }
 
@@ -1002,6 +1001,7 @@ input:checked + .item-graph__label:after {
 }
 
 .hero__card-link {
+  display: inline-block;
   margin-top: clamp(0.5rem, 0.386rem + 0.57vw, 0.75rem);
   color: var(--White, #fff);
 }
@@ -1140,6 +1140,7 @@ input:checked + .item-graph__label:after {
 }
 
 .metrics__card--link {
+  display: inline-block;
   margin-top: clamp(1.5rem, 0.804rem + 3.1vw, 3.125rem);
   position: relative;
   font-size: 20px;
@@ -2017,7 +2018,7 @@ input:checked + .item-graph__label:after {
 
 .buy__item--step {
   display: inline-block;
-  padding: 8px 16px;
+  padding: clamp(0.5rem, 0.05rem + 2vw, 0.75rem) clamp(1rem, 0.1rem + 4vw, 1.5rem);
   font-size: clamp(0.75rem, 0.075rem + 3vw, 1.125rem);
   font-weight: 700;
   line-height: 1;
@@ -2063,11 +2064,6 @@ input:checked + .item-graph__label:after {
 .buy__item--link {
   width: 100%;
   padding: 12px 20px;
-  font-size: clamp(1rem, 0.1rem + 4vw, 1.5rem);
-  font-weight: 600;
-  line-height: 1.5;
-  letter-spacing: -0.24px;
-  color: var(--text-dark);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2097,6 +2093,14 @@ input:checked + .item-graph__label:after {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.buy__link--text {
+  font-size: clamp(1rem, 0.1rem + 4vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.24px;
+  color: var(--text-dark);
 }
 
 .buy-btn__link--arrow {
@@ -2155,7 +2159,8 @@ input:checked + .item-graph__label:after {
   gap: 10px;
 }
 
-.footer__item-sublist--item {
+.footer__item-sublist--item,
+.footer__item-link {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;

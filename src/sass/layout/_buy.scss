@@ -20,13 +20,14 @@
   }
 }
 
-.buy__info--item {
-}
+// .buy__info--item {
+// }
 
 .buy__item--step {
   display: inline-block;
 
-  padding: 8px 16px;
+  padding: clamp(0.5rem, 0.05rem + 2vw, 0.75rem)
+    clamp(1rem, 0.1rem + 4vw, 1.5rem);
 
   font-size: clamp(0.75rem, 0.075rem + 3vw, 1.125rem);
   font-weight: 700;
@@ -79,12 +80,6 @@
 
   padding: 12px 20px;
 
-  font-size: clamp(1rem, 0.1rem + 4vw, 1.5rem);
-  font-weight: 600;
-  line-height: 1.5;
-  letter-spacing: -0.24px;
-  color: var(--text-dark);
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,6 +101,14 @@
   @media screen and (min-width: 560px) {
     display: flex;
   }
+}
+
+.buy__link--text {
+  font-size: clamp(1rem, 0.1rem + 4vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.24px;
+  color: var(--text-dark);
 }
 
 .buy-btn__link--arrow {
