@@ -15,13 +15,23 @@
   gap: 44px 0;
 
   @media screen and (min-width: 560px) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    gap: 16px 0;
   }
 }
 
-// .buy__info--item {
-// }
+.buy__info--item {
+  @media screen and (min-width: 560px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 20px;
+  }
+}
+
+.buy__item--text,
+.buy__item--img {
+  width: calc((100% - 20px) / 2);
+}
 
 .buy__item--step {
   display: inline-block;
@@ -38,6 +48,12 @@
 
   border-radius: 12px;
   background: var(--background-08);
+
+  @media screen and (min-width: 560px) {
+    padding: 8px clamp(1rem, 0.563rem + 1.25vw, 1.5rem);
+
+    font-size: clamp(0.75rem, 0.531rem + 0.63vw, 1rem);
+  }
 }
 
 .buy__item--title {
@@ -48,6 +64,10 @@
   line-height: 1;
   letter-spacing: -1.024px;
   color: var(--text-light);
+
+  @media screen and (min-width: 560px) {
+    font-size: clamp(2rem, -0.625rem + 7.5vw, 5rem);
+  }
 }
 
 .buy__item--subtitle {
@@ -58,6 +78,10 @@
   line-height: 1.3;
   letter-spacing: -0.144px;
   color: var(--text-light);
+
+  @media screen and (min-width: 560px) {
+    font-size: clamp(0.75rem, 0.531rem + 0.63vw, 1rem);
+  }
 }
 
 .buy__item--desc {
@@ -68,15 +92,23 @@
   line-height: 1.5;
   letter-spacing: -0.256px;
   color: var(--text-36);
+
+  @media screen and (min-width: 560px) {
+    font-size: clamp(1rem, 0.125rem + 2.5vw, 2rem);
+  }
 }
 
 .buy__item--img {
   margin-top: 24px;
+
+  @media screen and (min-width: 560px) {
+    margin-top: 0;
+  }
 }
 
 .buy__list--link,
 .buy__item--link {
-  width: 100%;
+  max-width: 100%;
 
   padding: 12px 20px;
 
@@ -87,6 +119,13 @@
 
   border-radius: 16px;
   background: var(--light-color);
+
+  @media screen and (min-width: 560px) {
+    max-width: 285px;
+
+    padding: clamp(0.75rem, 0.094rem + 1.88vw, 1.5rem)
+      clamp(1.5rem, 0.188rem + 3.75vw, 3rem);
+  }
 }
 
 .buy__list--link {
@@ -100,6 +139,8 @@
 
   @media screen and (min-width: 560px) {
     display: flex;
+
+    margin-top: 50px;
   }
 }
 
@@ -109,8 +150,19 @@
   line-height: 1.5;
   letter-spacing: -0.24px;
   color: var(--text-dark);
+
+  @media screen and (min-width: 560px) {
+    font-size: clamp(1rem, 0.563rem + 1.25vw, 1.5rem);
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.576px;
+  }
 }
 
 .buy-btn__link--arrow {
   width: clamp(0.875rem, 0.425rem + 2vw, 1.125rem);
+
+  @media screen and (min-width: 560px) {
+    width: clamp(1rem, 0.563rem + 1.25vw, 1.5rem);
+  }
 }
