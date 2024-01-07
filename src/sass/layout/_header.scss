@@ -115,20 +115,20 @@
 
   z-index: 100;
 
+  transition: all 0.3s ease;
+}
+
+.header__nav-link {
+  padding: 10px 0;
+
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: -0.256px;
   color: var(--text-56);
 
-  transition: all 0.3s ease;
-}
-
-.header__nav-item.active {
-  color: var(--text-light);
-}
-
-.header__nav-link {
-  padding: 10px 0;
+  &.active {
+    color: var(--text-light);
+  }
 }
 
 .nav-select-icon {

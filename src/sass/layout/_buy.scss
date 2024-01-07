@@ -9,6 +9,18 @@
 
 .buy__info--list {
   margin-top: 36px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 44px 0;
+
+  @media screen and (min-width: 560px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.buy__info--item {
 }
 
 .buy__item--step {
@@ -16,7 +28,7 @@
 
   padding: 8px 16px;
 
-  font-size: 12px;
+  font-size: clamp(0.75rem, 0.075rem + 3vw, 1.125rem);
   font-weight: 700;
   line-height: 1;
   letter-spacing: 1.44px;
@@ -25,4 +37,77 @@
 
   border-radius: 12px;
   background: var(--background-08);
+}
+
+.buy__item--title {
+  margin-top: 20px;
+
+  font-size: clamp(1rem, -2.038rem + 13.5vw, 2.688rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1.024px;
+  color: var(--text-light);
+}
+
+.buy__item--subtitle {
+  margin-top: 12px;
+
+  font-size: clamp(0.75rem, 0.075rem + 3vw, 1.125rem);
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.144px;
+  color: var(--text-light);
+}
+
+.buy__item--desc {
+  margin-top: 12px;
+
+  font-size: clamp(1rem, 0.1rem + 4vw, 1.5rem);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.256px;
+  color: var(--text-36);
+}
+
+.buy__item--img {
+  margin-top: 24px;
+}
+
+.buy__list--link,
+.buy__item--link {
+  width: 100%;
+
+  padding: 12px 20px;
+
+  font-size: clamp(1rem, 0.1rem + 4vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.24px;
+  color: var(--text-dark);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 16px;
+  background: var(--light-color);
+}
+
+.buy__list--link {
+  @media screen and (min-width: 560px) {
+    display: none;
+  }
+}
+
+.buy__item--link {
+  display: none;
+
+  @media screen and (min-width: 560px) {
+    display: flex;
+  }
+}
+
+.buy-btn__link--arrow {
+  width: clamp(0.875rem, 0.425rem + 2vw, 1.125rem);
 }
