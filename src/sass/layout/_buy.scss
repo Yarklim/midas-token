@@ -30,7 +30,9 @@
 
 .buy__item--text,
 .buy__item--img {
-  width: calc((100% - 20px) / 2);
+  @media screen and (min-width: 560px) {
+    width: calc((100% - 20px) / 2);
+  }
 }
 
 .buy__item--step {
