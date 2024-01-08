@@ -38,4 +38,41 @@
   display: flex;
   align-items: center;
   gap: 0 12px;
+
+  padding: 14px;
+
+  border-radius: 50%;
+  background-color: var(--background-blue);
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent;
+  }
+}
+
+.socials__link--icon {
+  width: clamp(1.25rem, 0.365rem + 3.93vw, 2.25rem);
+
+  fill: var(--accent-primary);
+}
+
+.socials__link--icon-headphones {
+  width: clamp(1.25rem, 0.587rem + 2.95vw, 2rem);
+
+  fill: var(--accent-primary);
+}
+
+.socials__link--name {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+
+    font-size: clamp(1.25rem, -0.083rem + 2.78vw, 2rem);
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.64px;
+    color: var(--accent-primary);
+  }
 }
