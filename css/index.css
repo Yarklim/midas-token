@@ -2364,7 +2364,6 @@ input:checked + .item-graph__label:after {
   font-weight: 500;
   letter-spacing: -0.4px;
   color: var(--text-56);
-  text-align: justify;
 }
 .faq__details--desc-item::before {
   content: "";
