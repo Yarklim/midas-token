@@ -2332,6 +2332,53 @@ input:checked + .item-graph__label:after {
           transform: rotate(-180deg);
 }
 
+.faq__details--desc {
+  margin-top: clamp(1.125rem, 0.964rem + 0.71vw, 1.5rem);
+  padding-right: 16px;
+  font-size: clamp(1rem, 0.893rem + 0.48vw, 1.25rem);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.256px;
+  color: var(--text-light);
+}
+
+.faq__details--desc-list {
+  width: 100%;
+  margin-top: clamp(0.75rem, 0.643rem + 0.48vw, 1rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 12px;
+}
+
+.faq__details--desc-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 16px;
+  font-size: clamp(1rem, 0.893rem + 0.48vw, 1.25rem);
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  color: var(--text-56);
+  text-align: justify;
+}
+.faq__details--desc-item::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 16px;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  border-radius: 50%;
+  background-color: var(--accent-primary);
+}
+
 .footer {
   display: none;
   background-color: var(--background-primary);
