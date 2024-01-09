@@ -2298,6 +2298,9 @@ input:checked + .item-graph__label:after {
   color: var(--text-light);
   cursor: pointer;
 }
+.faq__details--title h3 {
+  width: clamp(12.5rem, 2.857rem + 48.21vw, 46.25rem);
+}
 
 .faq__details--icon {
   display: -webkit-box;

@@ -117,6 +117,10 @@
   color: var(--text-light);
 
   cursor: pointer;
+
+  & h3 {
+    width: clamp(12.5rem, 2.857rem + 48.21vw, 46.25rem);
+  }
 }
 
 .faq__details--icon {
