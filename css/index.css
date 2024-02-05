@@ -173,7 +173,7 @@ button {
   --text-light: #fff;
   --text-dark: #0a0c0f;
   --text-24: rgba(255, 255, 255, 0.24);
-  --text-36: rgba(255, 255, 255, 0.36);
+  --text-36: rgba(255, 255, 255, 0.361);
   --text-56: rgba(255, 255, 255, 0.56);
   --text-08: rgba(255, 255, 255, 0.08);
   --accent-primary: #43a1f7;
@@ -626,6 +626,8 @@ button {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 20px;
+  padding: 10px 0;
+  position: relative;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.5;
@@ -641,6 +643,55 @@ button {
   .header__user-actions {
     font-size: 16px;
   }
+}
+
+.user-actions__drop-down--list {
+  width: 100%;
+  padding: 10px 20px;
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  border-radius: 8px;
+  background: rgba(50, 67, 95, 0.973);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.user-actions__drop-down--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  cursor: pointer;
+}
+
+.nav-select-icon.active__drop-down {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  fill: var(--accent-primary);
+}
+
+.user-actions__drop-down--list.active__drop-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
+}
+
+.user__drop-down--icon {
+  width: 18px;
+  height: 18px;
+  fill: var(--text-36);
 }
 
 .hero {

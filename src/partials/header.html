@@ -116,12 +116,38 @@
         </nav>
 
         <div class="header__user-actions">
-          <p class="user-name">Aurielien Solamon</p>
+          <span class="user-name">Aurielien Solamon</span>
           <button class="user-actions__select" aria-label="user menu">
             <svg width="24" height="24" class="nav-select-icon">
               <use href="./images/icons/icons.svg#down"></use>
             </svg>
           </button>
+          <ul class="user-actions__drop-down--list">
+            <li class="user-actions__drop-down--item js-modal">
+              <svg width="18" height="18" class="user__drop-down--icon">
+                <use href="./images/icons/icons.svg#account"></use>
+              </svg>
+              <button class="user-actions__drop-down--link">Profile</button>
+            </li>
+            <li class="user-actions__drop-down--item js-modal">
+              <svg width="18" height="18" class="user__drop-down--icon">
+                <use href="./images/icons/icons.svg#user-wallet"></use>
+              </svg>
+              <button class="user-actions__drop-down--link">Wallet</button>
+            </li>
+            <li class="user-actions__drop-down--item js-modal">
+              <svg width="18" height="18" class="user__drop-down--icon">
+                <use href="./images/icons/icons.svg#settings"></use>
+              </svg>
+              <button class="user-actions__drop-down--link">Settings</button>
+            </li>
+            <li class="user-actions__drop-down--item js-modal">
+              <svg width="18" height="18" class="user__drop-down--icon">
+                <use href="./images/icons/icons.svg#logout"></use>
+              </svg>
+              <button class="user-actions__drop-down--link">Logout</button>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
