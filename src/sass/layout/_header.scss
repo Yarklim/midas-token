@@ -136,6 +136,10 @@
   &.active {
     color: var(--text-light);
   }
+
+  @media screen and (min-width: 910px) {
+    font-size: 16px;
+  }
 }
 
 .nav__drop-down--list {
@@ -169,7 +173,11 @@
 .nav__drop-down--link {
   font-size: 14px;
   font-weight: 500;
-  color: var(--text-56);
+  color: var(--accent-primary);
+
+  @media screen and (min-width: 910px) {
+    font-size: 16px;
+  }
 }
 
 .drop-down__icon,
@@ -188,6 +196,7 @@
 
   margin-top: 20px;
 
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: -0.256px;
@@ -195,5 +204,9 @@
 
   @media screen and (min-width: 768px) {
     margin-top: 0;
+  }
+
+  @media screen and (min-width: 910px) {
+    font-size: 16px;
   }
 }
