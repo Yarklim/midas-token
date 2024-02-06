@@ -1,5 +1,6 @@
 import './mobile-menu';
 import './hide-block';
+import './modal';
 
 const headerNav = document.querySelector('.header__wrapper');
 const heroSection = document.querySelector('.hero');

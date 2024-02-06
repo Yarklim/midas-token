@@ -397,6 +397,103 @@ button {
   background-color: var(--light-color);
 }
 
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  visibility: visible;
+  opacity: 1;
+  z-index: 1000;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop.is-hidden .modal {
+  -webkit-transform: translate(-50%, -50%) scale(0.7);
+          transform: translate(-50%, -50%) scale(0.7);
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: calc(100% - 20px);
+  max-width: 700px;
+  max-height: 500px;
+  padding: 40px clamp(1.25rem, -0.75rem + 10vw, 3.75rem);
+  border-radius: 10px;
+  background: var(--linear-grad-blue);
+  -webkit-box-shadow: 2px 4px 4px rgba(49, 112, 128, 0.363), 1px 3px 3px rgba(26, 51, 97, 0.14), 1px 2px 1px rgba(33, 90, 197, 0.2);
+          box-shadow: 2px 4px 4px rgba(49, 112, 128, 0.363), 1px 3px 3px rgba(26, 51, 97, 0.14), 1px 2px 1px rgba(33, 90, 197, 0.2);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.modal__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__logo-icon {
+  width: clamp(2rem, 1.455rem + 2.73vw, 3.5rem);
+}
+
+.modal__logo-text {
+  font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
+  font-weight: 500;
+}
+
+.modal__content {
+  margin: 20px 0 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 10px;
+  font-size: clamp(1rem, 0.636rem + 1.82vw, 2rem);
+}
+
+.modal__close {
+  min-width: 150px;
+  padding: 10px 40px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--text-light);
+  border-radius: 10px;
+  border: 2px solid var(--background-12);
+  background: var(--background-blue);
+  -webkit-box-shadow: 2px 4px 4px rgba(49, 112, 128, 0.363), 1px 3px 3px rgba(26, 51, 97, 0.14);
+          box-shadow: 2px 4px 4px rgba(49, 112, 128, 0.363), 1px 3px 3px rgba(26, 51, 97, 0.14);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.modal__close:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-box-shadow: 1px 2px 2px rgba(49, 112, 128, 0.363), 1px 2px 2px rgba(26, 51, 97, 0.14);
+          box-shadow: 1px 2px 2px rgba(49, 112, 128, 0.363), 1px 2px 2px rgba(26, 51, 97, 0.14);
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -1034,6 +1131,7 @@ input:checked + .item-graph__label:after {
   display: inline-block;
   margin-top: clamp(0.5rem, 0.386rem + 0.57vw, 0.75rem);
   color: var(--White, #fff);
+  cursor: pointer;
 }
 
 .metrics__container {
@@ -1178,6 +1276,7 @@ input:checked + .item-graph__label:after {
   line-height: 1.4;
   letter-spacing: -0.4px;
   color: var(--text-light);
+  cursor: pointer;
 }
 .metrics__card--link::after {
   content: "";
@@ -1232,6 +1331,7 @@ input:checked + .item-graph__label:after {
   text-shadow: 0px 32px 64px rgba(255, 255, 255, 0.08);
   border-radius: clamp(1.5rem, 0.682rem + 4.09vw, 3.75rem);
   background: var(--linear-grad-rose);
+  cursor: pointer;
   -webkit-transform: rotate(-2deg);
           transform: rotate(-2deg);
   cursor: pointer;
@@ -2177,6 +2277,8 @@ input:checked + .item-graph__label:after {
 }
 
 .buy__link--text {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   font-size: clamp(1rem, 0.1rem + 4vw, 1.5rem);
   font-weight: 600;
   line-height: 1.5;
@@ -2250,6 +2352,7 @@ input:checked + .item-graph__label:after {
   padding: 14px;
   border-radius: 50%;
   background-color: var(--background-blue);
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .faq__socials--link {

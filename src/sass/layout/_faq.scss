@@ -44,6 +44,8 @@
   border-radius: 50%;
   background-color: var(--background-blue);
 
+  cursor: pointer;
+
   @media screen and (min-width: 768px) {
     padding: 10px;
     border-radius: 0;

@@ -127,6 +127,8 @@
   letter-spacing: -0.4px;
   color: var(--text-light);
 
+  cursor: pointer;
+
   &::after {
     content: '';
     width: 22px;
