@@ -667,13 +667,13 @@ button {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding: 10px 15px;
+  padding: 10px 20px;
   display: none;
   position: absolute;
   top: 40px;
   left: 10px;
   border-radius: 8px;
-  background: rgba(10, 12, 15, 0.9);
+  background: rgba(50, 67, 95, 0.973);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
@@ -698,7 +698,7 @@ button {
 .nav__drop-down--link {
   font-size: 14px;
   font-weight: 500;
-  color: var(--accent-primary);
+  color: var(--text-56);
 }
 @media screen and (min-width: 910px) {
   .nav__drop-down--link {
@@ -716,12 +716,6 @@ button {
 }
 
 .header__user-actions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 20px;
   padding: 10px 0;
   position: relative;
@@ -740,6 +734,16 @@ button {
   .header__user-actions {
     font-size: 16px;
   }
+}
+
+.user__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
 }
 
 .user-actions__drop-down--list {
