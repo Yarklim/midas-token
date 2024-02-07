@@ -4,23 +4,23 @@ const userMenu = document.querySelector('.user-actions__drop-down--list');
 
 let isOpen = false;
 
-userAcrtionEl.addEventListener('click', e => {
-  toggleUserMenu();
-  isOpen = true;
+userAcrtionEl.addEventListener('click', toggleUserMenu);
 
-  console.log(e.target);
-  console.log(e.currentTarget);
-  console.log(isOpen);
+userMenu.addEventListener('click', () => {
+  if (isOpen) closeUserMenu();
+});
 
-  //   if (e.target !== e.currentTarget && isOpen) {
-  //     closeUserMenu();
-  //     isOpen = false;
-  //   }
+document.addEventListener('keydown', e => {
+  if (isOpen && e.code === 'Escape') closeUserMenu();
 });
 
 function toggleUserMenu() {
   userMenu.classList.toggle('active__drop-down');
   userActionBtn.classList.toggle('active__drop-down');
+
+  userMenu.classList.contains('active__drop-down')
+    ? (isOpen = true)
+    : (isOpen = false);
 }
 
 function closeUserMenu() {
