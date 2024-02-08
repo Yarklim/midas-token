@@ -23,6 +23,4 @@ function toggleUserMenu(e) {
   } else {
     isOpen = false;
   }
-
-  console.log(isOpen);
 }
