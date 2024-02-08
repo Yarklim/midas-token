@@ -7,23 +7,22 @@ let isOpen = false;
 userAcrtionEl.addEventListener('click', toggleUserMenu);
 
 userMenu.addEventListener('click', () => {
-  if (isOpen) closeUserMenu();
+  isOpen && toggleUserMenu();
 });
 
 document.addEventListener('keydown', e => {
-  if (isOpen && e.code === 'Escape') closeUserMenu();
+  if (isOpen && e.code === 'Escape') toggleUserMenu();
 });
 
-function toggleUserMenu() {
+function toggleUserMenu(e) {
   userMenu.classList.toggle('active__drop-down');
   userActionBtn.classList.toggle('active__drop-down');
 
-  userMenu.classList.contains('active__drop-down')
-    ? (isOpen = true)
-    : (isOpen = false);
-}
+  if (userMenu.classList.contains('active__drop-down')) {
+    isOpen = true;
+  } else {
+    isOpen = false;
+  }
 
-function closeUserMenu() {
-  userMenu.classList.remove('active__drop-down');
-  userActionBtn.classList.remove('active__drop-down');
+  console.log(isOpen);
 }
