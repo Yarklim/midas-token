@@ -14,7 +14,7 @@ document.addEventListener('keydown', e => {
   if (isOpen && e.code === 'Escape') toggleUserMenu();
 });
 
-function toggleUserMenu(e) {
+export function toggleUserMenu() {
   userMenu.classList.toggle('active__drop-down');
   userActionBtn.classList.toggle('active__drop-down');
 
