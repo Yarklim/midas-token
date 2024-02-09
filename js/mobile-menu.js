@@ -4,6 +4,7 @@ const burgerEl = document.querySelector('.burger-menu');
 const menu = document.querySelector('.header__menu');
 const wrapper = document.querySelector('.header__wrapper');
 const menuItems = document.querySelectorAll('.header__nav-item');
+const dropDownEl = document.querySelectorAll('.nav__drop-down--item');
 const userMenu = document.querySelector('.user-actions__drop-down--list');
 
 const menuOpen = () => {
@@ -35,6 +36,16 @@ burgerEl.addEventListener('click', () => {
 });
 
 menuItems.forEach(item =>
+  item.addEventListener('click', () => {
+    if (burgerEl.classList.value.includes('is-open')) {
+      menuClose();
+    } else {
+      return;
+    }
+  })
+);
+
+dropDownEl.forEach(item =>
   item.addEventListener('click', () => {
     if (burgerEl.classList.value.includes('is-open')) {
       menuClose();
