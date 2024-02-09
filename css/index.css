@@ -630,7 +630,8 @@ button {
   }
 }
 
-.header__nav-item {
+.header__nav-item,
+.nav-utility {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,7 +643,8 @@ button {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.header__nav-item span {
+.header__nav-item span,
+.nav-utility span {
   cursor: pointer;
 }
 
