@@ -7,7 +7,6 @@ const userMenuItemEl = document.querySelectorAll(
   '.user-actions__drop-down--item'
 );
 const mobileMenuEl = document.querySelector('.header__menu');
-const sectionEl = document.querySelectorAll('.container');
 
 let isOpen = false;
 
