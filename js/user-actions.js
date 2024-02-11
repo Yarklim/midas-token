@@ -7,6 +7,7 @@ const userMenuItemEl = document.querySelectorAll(
   '.user-actions__drop-down--item'
 );
 const mobileMenuEl = document.querySelector('.header__menu');
+const sectionEl = document.querySelectorAll('.container');
 
 let isOpen = false;
 
@@ -22,10 +23,6 @@ userMenuItemEl.forEach(item =>
   })
 );
 
-document.addEventListener('keydown', e => {
-  if (isOpen && e.code === 'Escape') toggleUserMenu();
-});
-
 export function toggleUserMenu() {
   userMenuEl.classList.toggle('active__drop-down');
   userActionBtnEl.classList.toggle('active__drop-down');
@@ -35,4 +32,8 @@ export function toggleUserMenu() {
   } else {
     isOpen = false;
   }
+
+  document.addEventListener('keydown', e => {
+    if (isOpen && e.code === 'Escape') toggleUserMenu();
+  });
 }
