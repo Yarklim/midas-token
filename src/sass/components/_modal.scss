@@ -34,7 +34,7 @@
   padding: 40px clamp(1.25rem, -0.75rem + 10vw, 3.75rem);
 
   border-radius: 10px;
-  background: var(--linear-grad-blue);
+  background: rgba(50, 67, 95, 0.973);
   box-shadow: 2px 4px 4px rgba(49, 112, 128, 0.363),
     1px 3px 3px rgba(26, 51, 97, 0.14), 1px 2px 1px rgba(33, 90, 197, 0.2);
 
@@ -45,7 +45,6 @@
 
 .modal__logo {
   display: flex;
-  //   justify-content: space-between;
   align-items: center;
 }
 
@@ -81,17 +80,17 @@
   color: var(--text-light);
 
   border-radius: 10px;
-  border: 2px solid var(--background-12);
+  border: 1px solid var(--background-12);
   background: var(--background-blue);
-  box-shadow: 2px 4px 4px rgba(49, 112, 128, 0.363),
-    1px 3px 3px rgba(26, 51, 97, 0.14);
+  box-shadow: 2px 4px 4px rgba(20, 54, 63, 0.719),
+    1px 3px 3px rgba(17, 37, 75, 0.8);
 
   transition: all 300ms ease;
 
   &:active {
     transform: scale(0.95);
 
-    box-shadow: 1px 2px 2px rgba(49, 112, 128, 0.363),
-      1px 2px 2px rgba(26, 51, 97, 0.14);
+    box-shadow: 1px 2px 2px rgba(20, 54, 63, 0.719),
+      1px 2px 2px rgba(17, 37, 75, 0.8);
   }
 }
