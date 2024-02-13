@@ -256,8 +256,8 @@ button {
 }
 
 .animation__left-to-right {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(-80%);
+          transform: translateX(-80%);
   opacity: 0.2;
   -webkit-animation: move-to-right 1000ms ease-in-out forwards;
           animation: move-to-right 1000ms ease-in-out forwards;
