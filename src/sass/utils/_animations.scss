@@ -1,0 +1,13 @@
+.animation__left-to-right {
+  transform: translateX(-100%);
+  opacity: 0.2;
+
+  animation: move-to-right 1000ms ease-in-out forwards;
+}
+
+@keyframes move-to-right {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

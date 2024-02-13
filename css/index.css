@@ -255,6 +255,29 @@ button {
   height: 0;
 }
 
+.animation__left-to-right {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  opacity: 0.2;
+  -webkit-animation: move-to-right 1000ms ease-in-out forwards;
+          animation: move-to-right 1000ms ease-in-out forwards;
+}
+
+@-webkit-keyframes move-to-right {
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes move-to-right {
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
 .header__message {
   width: 100%;
   display: -webkit-box;
