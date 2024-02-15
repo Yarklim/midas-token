@@ -60,7 +60,8 @@
   }
 }
 
-.hero__card-item {
+.hero__card-item,
+.hero__card-item--second {
   width: 100%;
   height: fit-content;
 
@@ -280,9 +281,14 @@ input:checked + .item-graph__label {
     transform: translate(-115%, -50%);
   }
 }
+
 input:checked + .item-graph__label:after {
   left: 100%;
   transform: translateX(-100%);
+}
+
+.hero__card-item--second.checkedBg {
+  background: linear-gradient(to right, #1f9686, #277d91);
 }
 
 // ===================================

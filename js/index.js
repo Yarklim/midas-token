@@ -2,6 +2,7 @@ import './mobile-menu';
 import './user-actions';
 import './hide-block';
 import './modal';
+import './animation';
 
 const headerNav = document.querySelector('.header__wrapper');
 const heroSection = document.querySelector('.hero');
