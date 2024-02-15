@@ -1,5 +1,5 @@
 .animation__left-to-right {
-  transform: translateX(-80%);
+  transform: translateX(-100%);
   opacity: 0.2;
 
   animation: move-to-right 1000ms ease-in-out forwards;
@@ -8,6 +8,34 @@
 @keyframes move-to-right {
   to {
     transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animation__right-to-left {
+  transform: translateX(100%);
+  opacity: 0.2;
+
+  animation: move-to-left 1000ms ease-in-out forwards;
+}
+
+@keyframes move-to-left {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animation__zoom--in {
+  transform: scale(0.5);
+  opacity: 0.2;
+
+  animation: zoom-in 1000ms ease-in-out forwards;
+}
+
+@keyframes zoom-in {
+  to {
+    transform: scale(1);
     opacity: 1;
   }
 }
