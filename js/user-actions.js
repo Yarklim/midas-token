@@ -6,6 +6,7 @@ const userMenuEl = document.querySelector('.user-actions__drop-down--list');
 const userMenuItemEl = document.querySelectorAll(
   '.user-actions__drop-down--item'
 );
+const sectionEl = document.querySelectorAll('section');
 const mobileMenuEl = document.querySelector('.header__menu');
 
 let isOpen = false;
@@ -34,5 +35,11 @@ export function toggleUserMenu() {
 
   document.addEventListener('keydown', e => {
     if (isOpen && e.code === 'Escape') toggleUserMenu();
+  });
+
+  sectionEl.forEach(el => {
+    el.addEventListener('click', e => {
+      isOpen && e.currentTarget !== userActionEl && toggleUserMenu();
+    });
   });
 }

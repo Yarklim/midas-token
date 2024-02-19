@@ -46,10 +46,12 @@
 .modal__logo {
   display: flex;
   align-items: center;
+  column-gap: 10px;
 }
 
 .modal__logo-icon {
   width: clamp(2rem, 1.455rem + 2.73vw, 3.5rem);
+  fill: var(--light-color);
 }
 
 .modal__logo-text {
