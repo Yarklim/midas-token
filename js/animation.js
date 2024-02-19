@@ -10,7 +10,5 @@ inputEl.addEventListener('click', () => {
   } else {
     cardBgEl.classList.remove('checkedBg');
   }
-
-  console.log(inputEl.getAttribute('checked'));
 });
 // ===================================================

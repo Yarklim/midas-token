@@ -108,6 +108,10 @@ address {
   all: unset;
 }
 
+html {
+  color-scheme: light dark;
+}
+
 html,
 body {
   width: 100%;
@@ -727,8 +731,11 @@ button {
   letter-spacing: -0.256px;
   color: var(--text-56);
 }
+.header__nav-link:hover, .header__nav-link:focus-visible {
+  color: var(--accent-primary);
+}
 .header__nav-link.active {
-  color: var(--text-light);
+  color: var(--accent-primary);
 }
 @media screen and (min-width: 910px) {
   .header__nav-link {
@@ -766,17 +773,6 @@ button {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   fill: var(--accent-primary);
-}
-
-.nav__drop-down--link {
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--text-56);
-}
-@media screen and (min-width: 910px) {
-  .nav__drop-down--link {
-    font-size: 16px;
-  }
 }
 
 .drop-down__icon,
@@ -1154,8 +1150,8 @@ button {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 10;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 @media screen and (min-width: 910px) {
   .item-graph__label-icon {
@@ -1187,8 +1183,8 @@ input:checked + .item-graph__label:after {
 }
 
 .hero__card-item--second.checkedBg {
-  background: -webkit-gradient(linear, left top, right top, from(#1f9686), to(#277d91));
-  background: linear-gradient(to right, #1f9686, #277d91);
+  background: -webkit-gradient(linear, left top, right top, from(#0d8878), to(#107991));
+  background: linear-gradient(to right, #0d8878, #107991);
 }
 
 .item-graph__icon-midas {
