@@ -589,6 +589,7 @@ button {
 .logo-icon {
   width: 56px;
   height: 64px;
+  fill: var(--light-color);
 }
 
 .header__navigation-bar {
@@ -734,7 +735,8 @@ button {
 .header__nav-link:hover, .header__nav-link:focus-visible {
   color: var(--accent-primary);
 }
-.header__nav-link.active {
+.header__nav-link.active__nav-link {
+  fill: var(--accent-primary);
   color: var(--accent-primary);
 }
 @media screen and (min-width: 910px) {

@@ -1,7 +1,7 @@
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <symbol id="midas" viewBox="0 0 56 64">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M35.875 21L0 43H41L35.875 21ZM5.125 21L17.0791 29.998L0 43L5.125 21Z" fill="white"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M35.875 21L0 43H41L35.875 21ZM5.125 21L17.0791 29.998L0 43L5.125 21Z" />
     </symbol>
     
     <symbol id="close" viewBox="0 0 16 16">

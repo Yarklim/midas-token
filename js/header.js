@@ -28,3 +28,17 @@ window.onscroll = () => {
 
   prevScrollPos = currentScrollPos;
 };
+
+// ================ Active Link =================
+const headerNavLink = document.querySelectorAll('.header__nav-link');
+
+headerNavLink.forEach(link => {
+  link.addEventListener('click', () => {
+    const currentActiveLink = document.querySelector('.active__nav-link');
+
+    if (currentActiveLink) {
+      currentActiveLink.classList.remove('active__nav-link');
+    }
+    link.classList.add('active__nav-link');
+  });
+});
