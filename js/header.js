@@ -32,13 +32,36 @@ window.onscroll = () => {
 // ================ Active Link =================
 const headerNavLink = document.querySelectorAll('.header__nav-link');
 
-headerNavLink.forEach(link => {
-  link.addEventListener('click', () => {
-    const currentActiveLink = document.querySelector('.active__nav-link');
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        headerNavLink.forEach(link => {
+          const id = link.getAttribute('href').replace('#', '');
 
-    if (currentActiveLink) {
-      currentActiveLink.classList.remove('active__nav-link');
-    }
-    link.classList.add('active__nav-link');
-  });
+          if (id === entry.target.id) {
+            onChangeLinkColor(link);
+          }
+        });
+      }
+    });
+  },
+  { threshold: 0.3 }
+);
+
+document.querySelectorAll('[data-js-observer]').forEach(section => {
+  observer.observe(section);
 });
+
+headerNavLink.forEach(link => {
+  link.addEventListener('click', () => onChangeLinkColor(link));
+});
+
+function onChangeLinkColor(link) {
+  const currentActiveLink = document.querySelector('.active__nav-link');
+
+  if (currentActiveLink) {
+    currentActiveLink.classList.remove('active__nav-link');
+  }
+  link.classList.add('active__nav-link');
+}

@@ -589,7 +589,7 @@ button {
 .logo-icon {
   width: 56px;
   height: 64px;
-  fill: var(--light-color);
+  fill: inherit;
 }
 
 .header__navigation-bar {
@@ -724,23 +724,32 @@ button {
   cursor: pointer;
 }
 
-.header__nav-link {
+.header__nav-link,
+.header__nav-utility {
   padding: 10px 0;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: -0.256px;
   color: var(--text-56);
+  fill: var(--light-color);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.header__nav-link:hover, .header__nav-link:focus-visible {
+.header__nav-link:hover, .header__nav-link:focus-visible,
+.header__nav-utility:hover,
+.header__nav-utility:focus-visible {
   color: var(--accent-primary);
-}
-.header__nav-link.active__nav-link {
   fill: var(--accent-primary);
+}
+.header__nav-link.active__nav-link,
+.header__nav-utility.active__nav-link {
   color: var(--accent-primary);
+  fill: var(--accent-primary);
 }
 @media screen and (min-width: 910px) {
-  .header__nav-link {
+  .header__nav-link,
+  .header__nav-utility {
     font-size: 16px;
   }
 }

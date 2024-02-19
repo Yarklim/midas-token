@@ -23,7 +23,7 @@
   width: 56px;
   height: 64px;
 
-  fill: var(--light-color);
+  fill: inherit;
 }
 
 .header__navigation-bar {
@@ -129,7 +129,8 @@
   }
 }
 
-.header__nav-link {
+.header__nav-link,
+.header__nav-utility {
   padding: 10px 0;
 
   font-size: 14px;
@@ -138,14 +139,19 @@
   letter-spacing: -0.256px;
   color: var(--text-56);
 
+  fill: var(--light-color);
+
+  transition: all 0.3s ease-in-out;
+
   &:hover,
   &:focus-visible {
     color: var(--accent-primary);
+    fill: var(--accent-primary);
   }
 
   &.active__nav-link {
-    fill: var(--accent-primary);
     color: var(--accent-primary);
+    fill: var(--accent-primary);
   }
 
   @media screen and (min-width: 910px) {
