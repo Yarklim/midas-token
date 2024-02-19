@@ -1,5 +1,7 @@
 const headerMenu = document.querySelector('.header');
 const heroSection = document.querySelector('.hero');
+const selectListEl = document.querySelector('[data-select-list]');
+const selectItemEl = document.querySelectorAll('[data-select-item]');
 
 // ================ Hero Section Position =================
 let bodyTopPadding = headerMenu.offsetHeight;
@@ -29,7 +31,7 @@ window.onscroll = () => {
   prevScrollPos = currentScrollPos;
 };
 
-// ================ Active Link =================
+// ================ Active Link & Select Menu =================
 const headerNavLink = document.querySelectorAll('.header__nav-link');
 
 const observer = new IntersectionObserver(
@@ -41,6 +43,24 @@ const observer = new IntersectionObserver(
 
           if (id === entry.target.id) {
             onChangeLinkColor(link);
+          }
+        });
+        selectItemEl.forEach(el => {
+          const selectId = el.getAttribute('href').replace('#', '');
+
+          if (selectId === entry.target.id) {
+            onChangeLinkColor(el);
+            selectListEl.textContent = el.textContent;
+            selectListEl.classList.add('active__select-list');
+          }
+          if (
+            entry.target.id === 'buy' ||
+            entry.target.id === 'stake' ||
+            entry.target.id === 'metrics' ||
+            entry.target.id === 'main'
+          ) {
+            selectListEl.textContent = 'Other';
+            selectListEl.classList.remove('active__select-list');
           }
         });
       }
@@ -55,6 +75,14 @@ document.querySelectorAll('[data-js-observer]').forEach(section => {
 
 headerNavLink.forEach(link => {
   link.addEventListener('click', () => onChangeLinkColor(link));
+});
+
+selectItemEl.forEach(link => {
+  link.addEventListener('click', () => {
+    onChangeLinkColor(link);
+    selectListEl.textContent = link.textContent;
+    selectListEl.classList.add('active__select-list');
+  });
 });
 
 function onChangeLinkColor(link) {

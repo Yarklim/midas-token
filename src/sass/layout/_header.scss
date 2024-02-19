@@ -130,6 +130,7 @@
 }
 
 .header__nav-link,
+.select__nav-link,
 .header__nav-utility {
   padding: 10px 0;
 
@@ -149,14 +150,15 @@
     fill: var(--accent-primary);
   }
 
-  &.active__nav-link {
-    color: var(--accent-primary);
-    fill: var(--accent-primary);
-  }
-
   @media screen and (min-width: 910px) {
     font-size: 16px;
   }
+}
+
+.active__nav-link,
+.active__select-list {
+  color: var(--accent-primary);
+  fill: var(--accent-primary);
 }
 
 .nav__drop-down--list {

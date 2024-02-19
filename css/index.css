@@ -729,6 +729,7 @@ button {
 }
 
 .header__nav-link,
+.select__nav-link,
 .header__nav-utility {
   padding: 10px 0;
   font-size: 14px;
@@ -741,21 +742,25 @@ button {
   transition: all 0.3s ease-in-out;
 }
 .header__nav-link:hover, .header__nav-link:focus-visible,
+.select__nav-link:hover,
+.select__nav-link:focus-visible,
 .header__nav-utility:hover,
 .header__nav-utility:focus-visible {
   color: var(--accent-primary);
   fill: var(--accent-primary);
 }
-.header__nav-link.active__nav-link,
-.header__nav-utility.active__nav-link {
-  color: var(--accent-primary);
-  fill: var(--accent-primary);
-}
 @media screen and (min-width: 910px) {
   .header__nav-link,
+  .select__nav-link,
   .header__nav-utility {
     font-size: 16px;
   }
+}
+
+.active__nav-link,
+.active__select-list {
+  color: var(--accent-primary);
+  fill: var(--accent-primary);
 }
 
 .nav__drop-down--list {
