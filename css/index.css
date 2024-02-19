@@ -568,6 +568,8 @@ button {
   position: fixed;
   top: 0;
   z-index: 500;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .header__wrapper {
