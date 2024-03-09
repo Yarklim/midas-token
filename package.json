@@ -18,6 +18,7 @@
     "url": "https://github.com/Yarklim/midas-token/issues"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "modern-normalize": "^2.0.0"
   },
   "devDependencies": {
