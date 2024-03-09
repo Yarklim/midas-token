@@ -288,7 +288,16 @@ input:checked + .item-graph__label:after {
 }
 
 .hero__card-item--second.checkedBg {
-  background: linear-gradient(to right, #0d8878, #107991);
+  animation: opacity-bg 0.7s forwards;
+}
+
+@keyframes opacity-bg {
+  from {
+    background-color: rgba(4, 207, 140, 0);
+  }
+  to {
+    background-color: rgba(30, 124, 116, 0.74);
+  }
 }
 
 // ===================================
