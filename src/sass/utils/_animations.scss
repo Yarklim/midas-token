@@ -39,3 +39,14 @@
     opacity: 1;
   }
 }
+
+@keyframes cards-animation {
+  from {
+    scale: 0.8;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}

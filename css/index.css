@@ -329,6 +329,26 @@ button {
     opacity: 1;
   }
 }
+@-webkit-keyframes cards-animation {
+  from {
+    scale: 0.8;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+@keyframes cards-animation {
+  from {
+    scale: 0.8;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
 .header__message {
   width: 100%;
   display: -webkit-box;
@@ -982,8 +1002,6 @@ button {
           box-shadow: 0px 24px 48px -24px rgba(10, 12, 15, 0.16);
   -webkit-backdrop-filter: blur(60px);
           backdrop-filter: blur(60px);
-  -webkit-transform: perspective(25em) rotateX(45deg);
-          transform: perspective(25em) rotateX(45deg);
 }
 @media screen and (min-width: 560px) {
   .hero__card-item,
