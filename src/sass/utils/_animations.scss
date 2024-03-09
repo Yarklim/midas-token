@@ -1,6 +1,6 @@
 .animation__left-to-right {
   transform: translateX(-100%);
-  opacity: 0.2;
+  opacity: 0;
 
   animation: move-to-right 1000ms ease-in-out forwards;
 }
@@ -14,7 +14,7 @@
 
 .animation__right-to-left {
   transform: translateX(100%);
-  opacity: 0.2;
+  opacity: 0;
 
   animation: move-to-left 1000ms ease-in-out forwards;
 }

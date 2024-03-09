@@ -116,6 +116,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
   font-family: var(--font-inter);
   font-size: 16px;
   font-style: normal;
@@ -262,7 +263,7 @@ button {
 .animation__left-to-right {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
-  opacity: 0.2;
+  opacity: 0;
   -webkit-animation: move-to-right 1000ms ease-in-out forwards;
           animation: move-to-right 1000ms ease-in-out forwards;
 }
@@ -285,7 +286,7 @@ button {
 .animation__right-to-left {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  opacity: 0.2;
+  opacity: 0;
   -webkit-animation: move-to-left 1000ms ease-in-out forwards;
           animation: move-to-left 1000ms ease-in-out forwards;
 }
@@ -981,6 +982,8 @@ button {
           box-shadow: 0px 24px 48px -24px rgba(10, 12, 15, 0.16);
   -webkit-backdrop-filter: blur(60px);
           backdrop-filter: blur(60px);
+  -webkit-transform: perspective(25em) rotateX(45deg);
+          transform: perspective(25em) rotateX(45deg);
 }
 @media screen and (min-width: 560px) {
   .hero__card-item,
