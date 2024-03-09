@@ -7,6 +7,10 @@
   background-color: var(--background-primary);
 }
 
+.hero__wrapper {
+  overflow-x: hidden;
+}
+
 .hero__title,
 .hero__title--strong {
   width: clamp(18.75rem, 3.036rem + 78.57vw, 73.75rem);

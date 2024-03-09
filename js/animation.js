@@ -1,3 +1,7 @@
+// ============ Hero Section - first card ============
+
+// ====================================================
+
 // ============ Hero Section - second card ============
 const inputEl = document.querySelector('.item-graph__check');
 const cardBgEl = document.querySelector('.hero__card-item--second');
