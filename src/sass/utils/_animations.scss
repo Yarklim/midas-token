@@ -1,52 +1,13 @@
-.animation__left-to-right {
-  transform: translateX(-100%);
-  opacity: 0;
+/*============ Hero First Graph ============*/
+// .animated {
+//   animation: scale-first-graph 3s ease forwards;
+// }
 
-  animation: move-to-right 1000ms ease-in-out forwards;
-}
-
-@keyframes move-to-right {
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.animation__right-to-left {
-  transform: translateX(100%);
-  opacity: 0;
-
-  animation: move-to-left 1000ms ease-in-out forwards;
-}
-
-@keyframes move-to-left {
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.animation__zoom--in {
-  transform: scale(0.5);
-  opacity: 0.2;
-
-  animation: zoom-in 1000ms ease-in-out forwards;
-}
-
-@keyframes zoom-in {
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes cards-animation {
-  from {
-    scale: 0.8;
-    opacity: 0;
-  }
-  to {
-    scale: 1;
-    opacity: 1;
-  }
-}
+// @keyframes scale-first-graph {
+//   from {
+//     transform: scale(0);
+//   }
+//   to {
+//     transform: scale(1);
+//   }
+// }

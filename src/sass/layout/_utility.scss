@@ -1,3 +1,7 @@
+.utility__container {
+  overflow-x: hidden;
+}
+
 .utility__title {
   font-size: clamp(3rem, 0.804rem + 9.76vw, 8.125rem);
   font-weight: 700;

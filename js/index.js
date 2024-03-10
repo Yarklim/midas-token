@@ -3,4 +3,5 @@ import './mobile-menu';
 import './user-actions';
 import './hide-block';
 import './modal';
-import './animation';
+import './inputCheck';
+import './observerAnimations';

@@ -29,7 +29,7 @@
               <use href="./images/icons/icons.svg#fire"></use>
             </svg>
           </button>
-          <div class="item-grah__columns-list">
+          <div class="item-grah__columns-list animated" data-observer-target>
             <span class="item-grah--column"></span>
             <span class="item-grah--column"></span>
             <span class="item-grah--column"></span>
@@ -62,7 +62,12 @@
             width="72"
             height="72"
           />
-          <input type="checkbox" id="grah-check" class="item-graph__check" />
+          <input
+            type="checkbox"
+            id="grah-check"
+            class="item-graph__check"
+            data-observer-target
+          />
           <label for="grah-check" class="item-graph__label">
             <img
               class="item-graph__label-icon"
@@ -91,6 +96,7 @@
       <li class="hero__card-item" data-aos="fade-left" data-aos-duration="1000">
         <div class="hero__card-item--graph">
           <img
+            data-observer-target
             class="item-graph__graph"
             src="./images/icons/decor/graph.svg"
             alt="bitcoin"

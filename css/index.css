@@ -259,6 +259,7 @@ button {
   height: 0;
 }
 
+/*============ Hero First Graph ============*/
 .header__message {
   width: 100%;
   display: -webkit-box;
@@ -991,50 +992,69 @@ button {
           transform: scale(1.1);
 }
 
+.item-grah__columns-list {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
 .item-grah--column {
   width: 6.3%;
-  height: 100%;
   border-radius: 8px;
+  background: var(--background-08);
 }
 .item-grah--column:nth-child(1) {
   height: 10%;
-  background: var(--background-08);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: height 0.3s ease;
+  transition: height 0.3s ease;
 }
 .item-grah--column:nth-child(2) {
   height: 15%;
-  background: var(--background-08);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 .item-grah--column:nth-child(3) {
   height: 19%;
-  background: var(--background-08);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 .item-grah--column:nth-child(4) {
   height: 25%;
-  background: var(--background-08);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 .item-grah--column:nth-child(5) {
   height: 32%;
-  background: var(--background-08);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 .item-grah--column:nth-child(6) {
   height: 41%;
-  background: var(--background-08);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 .item-grah--column:nth-child(7) {
   height: 55%;
-  background: var(--background-08);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 .item-grah--column:nth-child(8) {
   height: 70%;
-  background: var(--background-08);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 .item-grah--column:nth-child(9) {
   height: 85%;
-  background: var(--background-08);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 .item-grah--column:nth-child(10) {
   height: 100%;
-  background: var(--background-08);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 
 .item-graph__icon {
@@ -1556,6 +1576,10 @@ input:checked + .item-graph__label:after {
   .stake__info-text {
     font-size: clamp(1rem, 0.125rem + 2.5vw, 2rem);
   }
+}
+
+.utility__container {
+  overflow-x: hidden;
 }
 
 .utility__title {
@@ -2187,6 +2211,10 @@ input:checked + .item-graph__label:after {
     margin-top: 12px;
     font-size: clamp(0.75rem, 0.094rem + 1.88vw, 1.5rem);
   }
+}
+
+.buy__container {
+  overflow-x: hidden;
 }
 
 .buy__title {

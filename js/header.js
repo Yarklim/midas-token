@@ -34,7 +34,7 @@ window.onscroll = () => {
 // ================ Active Link & Select Menu =================
 const headerNavLink = document.querySelectorAll('.header__nav-link');
 
-const observer = new IntersectionObserver(
+const sectionsObserver = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -70,7 +70,7 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll('[data-js-observer]').forEach(section => {
-  observer.observe(section);
+  sectionsObserver.observe(section);
 });
 
 headerNavLink.forEach(link => {
