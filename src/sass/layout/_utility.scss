@@ -94,6 +94,8 @@
   border: 2px solid var(--background-08);
   background: var(--background-08);
 
+  transform-origin: center;
+
   &.first {
     transform: translateY(20%);
   }

@@ -44,14 +44,21 @@
   padding: 14px;
 
   border-radius: 50%;
-  background-color: var(--background-blue);
+  background: var(--background-blue);
 
   cursor: pointer;
+
+  transition: all 0.3s ease;
 
   @media screen and (min-width: 768px) {
     padding: 10px;
     border-radius: 0;
-    background-color: transparent;
+    background: transparent;
+  }
+
+  &:hover,
+  &:focus-visible {
+    transform: scale(1.1);
   }
 }
 

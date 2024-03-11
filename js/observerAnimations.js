@@ -13,6 +13,7 @@ window.onload = () => {
   const countTotal = document.querySelector('[data-count-total]');
   const countLiquidity = document.querySelector('[data-count-liquidity]');
   const countBack = document.querySelector('[data-count-back]');
+  const metricsBg = document.querySelector('.metrics__bg');
 
   const options = {
     root: null,
@@ -37,7 +38,7 @@ window.onload = () => {
           doCount(countMarket, 47572397, 151232, 2000, ['en'], '$');
         }
         if (entry.target.hasAttribute('data-count-supply')) {
-          doCount(countSupply, 2575183, 10178, 2000, ['en'], '$');
+          doCount(countSupply, 2575183, 10178, 2000, ['en']);
         }
         if (entry.target.hasAttribute('data-count-price')) {
           doCount(countPrice, 19.24, 1.38, 2000, ['en-IN'], '$');
@@ -56,6 +57,9 @@ window.onload = () => {
         }
         if (entry.target.hasAttribute('data-count-back')) {
           doCount(countBack, 63844, 213, 5000, ['en']);
+        }
+        if (entry.target.hasAttribute('data-metrics-bg')) {
+          metricsBg.classList.add('metrics__bg--animated');
         }
 
         const entryEl = entry.target;
