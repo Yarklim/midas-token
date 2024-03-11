@@ -2585,20 +2585,9 @@ input:checked + .item-graph__label:after {
 }
 
 .faq__details--icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: clamp(0.125rem, 0.018rem + 0.48vw, 0.375rem);
   border-radius: 50%;
   background-color: var(--background-12);
-}
-.faq__details--icon svg {
   width: 24px;
   height: 24px;
   fill: #fff;
@@ -2607,7 +2596,7 @@ input:checked + .item-graph__label:after {
   transition: all 0.3s ease;
 }
 
-.faq__details[open] .faq__details--icon svg {
+.faq__details[open] .faq__details--icon {
   fill: var(--accent-primary);
   fill-opacity: 1;
   -webkit-transform: rotate(-180deg);
