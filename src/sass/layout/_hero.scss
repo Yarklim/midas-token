@@ -149,54 +149,6 @@
   transform-origin: bottom;
 }
 
-.item-grah--column {
-  width: 6.3%;
-
-  border-radius: 8px;
-  background: var(--background-08);
-
-  &:nth-child(1) {
-    height: 10%;
-    transform-origin: bottom;
-    transition: height 0.3s ease;
-  }
-  &:nth-child(2) {
-    height: 15%;
-    transform-origin: bottom;
-  }
-  &:nth-child(3) {
-    height: 19%;
-    transform-origin: bottom;
-  }
-  &:nth-child(4) {
-    height: 25%;
-    transform-origin: bottom;
-  }
-  &:nth-child(5) {
-    height: 32%;
-    transform-origin: bottom;
-  }
-  &:nth-child(6) {
-    height: 41%;
-    transform-origin: bottom;
-  }
-  &:nth-child(7) {
-    height: 55%;
-    transform-origin: bottom;
-  }
-  &:nth-child(8) {
-    height: 70%;
-    transform-origin: bottom;
-  }
-  &:nth-child(9) {
-    height: 85%;
-    transform-origin: bottom;
-  }
-  &:nth-child(10) {
-    height: 100%;
-    transform-origin: bottom;
-  }
-}
 // ================
 
 // Second card graph
@@ -286,21 +238,24 @@ input {
 }
 input:checked + .item-graph__label {
   background: linear-gradient(268deg, #577cff 0%, #4cbfff 100%), #43a1f7;
+  transition: 1s ease;
 
   & .item-graph__label-icon {
     top: 50%;
     left: 100%;
     transform: translate(-115%, -50%);
+    transition: 1s ease;
   }
 }
 
 input:checked + .item-graph__label:after {
   left: 100%;
   transform: translateX(-100%);
+  transition: 1s ease;
 }
 
 .hero__card-item--second.checkedBg {
-  animation: opacity-bg 0.7s forwards;
+  animation: opacity-bg 1.5s forwards;
 }
 
 @keyframes opacity-bg {

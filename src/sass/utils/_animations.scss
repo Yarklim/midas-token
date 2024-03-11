@@ -1,13 +1,59 @@
 /*============ Hero First Graph ============*/
-// .animated {
-//   animation: scale-first-graph 3s ease forwards;
-// }
+.item-grah--column {
+  width: 6.3%;
+  height: 0%;
 
-// @keyframes scale-first-graph {
-//   from {
-//     transform: scale(0);
-//   }
-//   to {
-//     transform: scale(1);
-//   }
-// }
+  border-radius: 8px;
+  background: var(--background-08);
+
+  &.animated-column:nth-child(1) {
+    height: 10%;
+    transform-origin: bottom;
+    transition: height 0.3s ease;
+  }
+  &.animated-column:nth-child(2) {
+    height: 15%;
+    transform-origin: bottom;
+    transition: height 0.5s ease;
+  }
+  &.animated-column:nth-child(3) {
+    height: 19%;
+    transform-origin: bottom;
+    transition: height 0.7s ease;
+  }
+  &.animated-column:nth-child(4) {
+    height: 25%;
+    transform-origin: bottom;
+    transition: height 0.9s ease;
+  }
+  &.animated-column:nth-child(5) {
+    height: 32%;
+    transform-origin: bottom;
+    transition: height 1.1s ease;
+  }
+  &.animated-column:nth-child(6) {
+    height: 41%;
+    transform-origin: bottom;
+    transition: height 1.3s ease;
+  }
+  &.animated-column:nth-child(7) {
+    height: 55%;
+    transform-origin: bottom;
+    transition: height 1.5s ease;
+  }
+  &.animated-column:nth-child(8) {
+    height: 70%;
+    transform-origin: bottom;
+    transition: height 1.7s ease;
+  }
+  &.animated-column:nth-child(9) {
+    height: 85%;
+    transform-origin: bottom;
+    transition: height 1.9s ease;
+  }
+  &.animated-column:nth-child(10) {
+    height: 100%;
+    transform-origin: bottom;
+    transition: height 2.1s ease;
+  }
+}
