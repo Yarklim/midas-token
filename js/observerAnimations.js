@@ -31,19 +31,19 @@ window.onload = () => {
           inputCheckBg.classList.add('checkedBg');
         }
         if (entry.target.hasAttribute('data-count-volume')) {
-          doCount(countVolume, 185246, 1123, 2000, ['en']);
+          doCount(countVolume, 185246, 1123, 2000, ['en'], '$');
         }
         if (entry.target.hasAttribute('data-count-market')) {
-          doCount(countMarket, 47572397, 151232, 2000, ['en']);
+          doCount(countMarket, 47572397, 151232, 2000, ['en'], '$');
         }
         if (entry.target.hasAttribute('data-count-supply')) {
-          doCount(countSupply, 2575183, 10178, 2000, ['en']);
+          doCount(countSupply, 2575183, 10178, 2000, ['en'], '$');
         }
         if (entry.target.hasAttribute('data-count-price')) {
-          doCount(countPrice, 19.24, 1.38, 2000, ['en-IN']);
+          doCount(countPrice, 19.24, 1.38, 2000, ['en-IN'], '$');
         }
         if (entry.target.hasAttribute('data-count-stake')) {
-          doCount(countStake, 30, 1, 2000, ['en']);
+          doCount(countStake, 30, 1, 2000, ['en'], '$');
         }
         if (entry.target.hasAttribute('data-count-users')) {
           doCount(countUsers, 2600, 5, 2000, ['en']);
@@ -52,7 +52,7 @@ window.onload = () => {
           doCount(countTotal, 1800000, 5245, 2000, ['en']);
         }
         if (entry.target.hasAttribute('data-count-liquidity')) {
-          doCount(countLiquidity, 4824884, 10123, 2000, ['en']);
+          doCount(countLiquidity, 4824884, 10123, 2000, ['en'], '$');
         }
         if (entry.target.hasAttribute('data-count-back')) {
           doCount(countBack, 63844, 213, 5000, ['en']);
