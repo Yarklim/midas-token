@@ -2418,6 +2418,10 @@ input:checked + .item-graph__label:after {
   }
 }
 
+.buy-list-btn {
+  margin-top: 40px;
+}
+
 .buy__link--text {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -2540,6 +2544,7 @@ input:checked + .item-graph__label:after {
   margin-top: clamp(3rem, 2.143rem + 3.81vw, 5rem);
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2548,6 +2553,11 @@ input:checked + .item-graph__label:after {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: clamp(0.5rem, 0.232rem + 1.19vw, 1.125rem);
+}
+@media screen and (min-width: 768px) {
+  .faq__details--list {
+    padding-bottom: 10px;
+  }
 }
 
 .faq__details--item {

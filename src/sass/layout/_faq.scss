@@ -95,9 +95,15 @@
   margin-left: auto;
   margin-right: auto;
 
+  padding-bottom: 20px;
+
   display: flex;
   flex-direction: column;
   row-gap: clamp(0.5rem, 0.232rem + 1.19vw, 1.125rem);
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 10px;
+  }
 }
 
 .faq__details--item {
