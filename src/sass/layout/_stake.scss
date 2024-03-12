@@ -17,6 +17,8 @@
   letter-spacing: -5;
   color: var(--text-light);
   text-shadow: 0px 32px 64px rgba(255, 255, 255, 0.08);
+
+  will-change: transform, -webkit-transform, opacity;
 }
 
 .stake__heading-accent {
@@ -111,6 +113,8 @@
   display: flex;
   align-items: center;
   column-gap: 16px;
+
+  will-change: transform, -webkit-transform, opacity;
 
   @media screen and (min-width: 560px) {
     column-gap: clamp(1rem, -0.313rem + 3.75vw, 2.5rem);
