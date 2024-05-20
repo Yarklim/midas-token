@@ -242,20 +242,20 @@ input {
 }
 input:checked + .item-graph__label {
   background: linear-gradient(268deg, #577cff 0%, #4cbfff 100%), #43a1f7;
-  transition: 1s ease;
+  transition: 0.3s ease;
 
   & .item-graph__label-icon {
     top: 50%;
     left: 100%;
     transform: translate(-115%, -50%);
-    transition: 1s ease;
+    transition: 0.3s ease;
   }
 }
 
 input:checked + .item-graph__label:after {
   left: 100%;
   transform: translateX(-100%);
-  transition: 1s ease;
+  transition: 0.3s ease;
 }
 
 .hero__card-item--second.checkedBg {

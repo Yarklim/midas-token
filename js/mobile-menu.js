@@ -16,7 +16,7 @@ const menuOpen = () => {
   menuEl.classList.add('open-menu');
   wrapperEl.classList.add('open-menu');
 
-  document.body.style.overflow = 'hidden';
+  //   document.body.style.overflow = 'hidden';
 };
 
 export const menuClose = () => {
