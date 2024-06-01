@@ -151,6 +151,10 @@
     display: flex;
 
     margin-top: 50px;
+
+    &:hover .buy-btn__link--arrow {
+      transform: translateX(10px);
+    }
   }
 }
 

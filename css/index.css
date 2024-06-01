@@ -1397,6 +1397,10 @@ input:checked + .item-graph__label:after {
     max-width: 480px;
   }
 }
+.metrics__card--item:hover .metrics__card--link {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
 
 .metrics__card--link {
   display: inline-block;
@@ -1408,6 +1412,10 @@ input:checked + .item-graph__label:after {
   letter-spacing: -0.4px;
   color: var(--text-light);
   cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .metrics__card--link::after {
   content: "";
@@ -1467,6 +1475,14 @@ input:checked + .item-graph__label:after {
   -webkit-transform: rotate(-2deg);
           transform: rotate(-2deg);
   cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.stake__heading-accent:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .stake__heading-text {
@@ -2063,6 +2079,10 @@ input:checked + .item-graph__label:after {
   border-radius: 16px;
   background: var(--light-color);
 }
+.utility__button:hover .utility__button-arrow {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
 .utility__button .utility__button-text {
   font-size: clamp(1rem, 0.333rem + 3.33vw, 1.5rem);
   font-weight: 600;
@@ -2072,6 +2092,8 @@ input:checked + .item-graph__label:after {
   width: clamp(0.875rem, 0.375rem + 2.5vw, 1.25rem);
   height: clamp(0.875rem, 0.375rem + 2.5vw, 1.25rem);
   fill: currentColor;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .payout-graph {
@@ -2424,6 +2446,10 @@ input:checked + .item-graph__label:after {
     display: flex;
     margin-top: 50px;
   }
+  .buy__item--link:hover .buy-btn__link--arrow {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
 }
 
 .buy-list-btn {
@@ -2574,7 +2600,12 @@ input:checked + .item-graph__label:after {
   border-radius: 16px;
   border: 1px solid var(--background-04);
   background: var(--background-12);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
   will-change: transform, -webkit-transform, opacity;
+}
+.faq__details--item:hover {
+  background: var(--background-04);
 }
 
 .faq__details {

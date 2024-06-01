@@ -134,6 +134,10 @@
     width: calc((100% - 20px) / 2);
     max-width: 480px;
   }
+
+  &:hover .metrics__card--link {
+    transform: translateX(10px);
+  }
 }
 
 .metrics__card--link {
@@ -149,6 +153,8 @@
   color: var(--text-light);
 
   cursor: pointer;
+
+  transition: transform 0.3s ease;
 
   &::after {
     content: '';

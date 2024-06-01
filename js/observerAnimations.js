@@ -8,9 +8,6 @@ window.onload = () => {
   const countMarket = document.querySelector('[data-count-market]');
   const countSupply = document.querySelector('[data-count-supply]');
   const countPrice = document.querySelector('[data-count-price]');
-  const countStake = document.querySelector('[data-count-stake]');
-  const countUsers = document.querySelector('[data-count-users]');
-  const countTotal = document.querySelector('[data-count-total]');
   const countLiquidity = document.querySelector('[data-count-liquidity]');
   const countBack = document.querySelector('[data-count-back]');
   const metricsBg = document.querySelector('.metrics__bg');
@@ -42,15 +39,6 @@ window.onload = () => {
         }
         if (entry.target.hasAttribute('data-count-price')) {
           doCount(countPrice, 19.24, 1.38, 2000, ['en-IN'], '$');
-        }
-        if (entry.target.hasAttribute('data-count-stake')) {
-          doCount(countStake, 30, 1, 2000, ['en'], '$');
-        }
-        if (entry.target.hasAttribute('data-count-users')) {
-          doCount(countUsers, 2600, 5, 2000, ['en']);
-        }
-        if (entry.target.hasAttribute('data-count-total')) {
-          doCount(countTotal, 1800000, 5245, 2000, ['en']);
         }
         if (entry.target.hasAttribute('data-count-liquidity')) {
           doCount(countLiquidity, 4824884, 10123, 2000, ['en'], '$');

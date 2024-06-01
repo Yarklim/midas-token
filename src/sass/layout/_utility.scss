@@ -293,6 +293,10 @@
   border-radius: 16px;
   background: var(--light-color);
 
+  &:hover .utility__button-arrow {
+    transform: translateX(10px);
+  }
+
   & .utility__button-text {
     font-size: clamp(1rem, 0.333rem + 3.33vw, 1.5rem);
     font-weight: 600;
@@ -302,6 +306,8 @@
       width: clamp(0.875rem, 0.375rem + 2.5vw, 1.25rem);
       height: clamp(0.875rem, 0.375rem + 2.5vw, 1.25rem);
       fill: currentColor;
+
+      transition: 0.3s ease;
     }
   }
 }

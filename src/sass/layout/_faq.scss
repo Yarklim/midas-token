@@ -115,7 +115,13 @@
   border: 1px solid var(--background-04);
   background: var(--background-12);
 
+  transition: 0.3s ease;
+
   will-change: transform, -webkit-transform, opacity;
+
+  &:hover {
+    background: var(--background-04);
+  }
 }
 
 .faq__details {
