@@ -56,10 +56,6 @@
   line-height: 1.38;
   letter-spacing: -0.169px;
   color: var(--text-light);
-
-  @media screen and (min-width: 910px) {
-    color: var(--text-36);
-  }
 }
 
 .message__read-arrow {
